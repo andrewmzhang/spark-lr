@@ -1,15 +1,18 @@
 
 Run with
 
+```
 sbt package
 ./run.sh
+```
 
 Output from the run is captured in logger.txt
 
 Output from my last run is in logger_old.txt
 
 Here are my spark conf settings in spark/conf/spark-defaults.conf:
-
+```
 spark.driver.memory 25g
 spark.driver.maxResultSize 0
 spark.executor.memory 25g
+```
