@@ -1,0 +1,938 @@
+18/02/08 19:39:41 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+18/02/08 19:39:41 INFO SparkContext: Running Spark version 2.4.0-SNAPSHOT
+18/02/08 19:39:41 INFO SparkContext: Submitted application: Test Name
+18/02/08 19:39:41 INFO SecurityManager: Changing view acls to: ubuntu
+18/02/08 19:39:41 INFO SecurityManager: Changing modify acls to: ubuntu
+18/02/08 19:39:41 INFO SecurityManager: Changing view acls groups to: 
+18/02/08 19:39:41 INFO SecurityManager: Changing modify acls groups to: 
+18/02/08 19:39:41 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(ubuntu); groups with view permissions: Set(); users  with modify permissions: Set(ubuntu); groups with modify permissions: Set()
+18/02/08 19:39:41 INFO Utils: Successfully started service 'sparkDriver' on port 39709.
+18/02/08 19:39:41 INFO SparkEnv: Registering MapOutputTracker
+18/02/08 19:39:41 INFO SparkEnv: Registering BlockManagerMaster
+18/02/08 19:39:41 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+18/02/08 19:39:41 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+18/02/08 19:39:41 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-b904e53a-984a-4bda-be8c-50c1f09ddac3
+18/02/08 19:39:41 INFO MemoryStore: MemoryStore started with capacity 13.2 GB
+18/02/08 19:39:41 INFO SparkEnv: Registering OutputCommitCoordinator
+18/02/08 19:39:41 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+18/02/08 19:39:41 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://ip-172-31-3-143.us-west-2.compute.internal:4040
+18/02/08 19:39:41 INFO SparkContext: Added JAR file:/ebs2/spark-lr/target/scala-2.11/simple-project_2.11-1.0.jar at spark://ip-172-31-3-143.us-west-2.compute.internal:39709/jars/simple-project_2.11-1.0.jar with timestamp 1518118781928
+18/02/08 19:39:41 INFO Executor: Starting executor ID driver on host localhost
+18/02/08 19:39:41 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40380.
+18/02/08 19:39:41 INFO NettyBlockTransferService: Server created on ip-172-31-3-143.us-west-2.compute.internal:40380
+18/02/08 19:39:41 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+18/02/08 19:39:41 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, ip-172-31-3-143.us-west-2.compute.internal, 40380, None)
+18/02/08 19:39:41 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-3-143.us-west-2.compute.internal:40380 with 13.2 GB RAM, BlockManagerId(driver, ip-172-31-3-143.us-west-2.compute.internal, 40380, None)
+18/02/08 19:39:41 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, ip-172-31-3-143.us-west-2.compute.internal, 40380, None)
+18/02/08 19:39:41 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, ip-172-31-3-143.us-west-2.compute.internal, 40380, None)
+18/02/08 19:39:42 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 214.5 KB, free 13.2 GB)
+18/02/08 19:39:42 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 20.4 KB, free 13.2 GB)
+18/02/08 19:39:42 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 20.4 KB, free: 13.2 GB)
+18/02/08 19:39:42 INFO SparkContext: Created broadcast 0 from textFile at MLUtils.scala:101
+18/02/08 19:39:42 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 214.5 KB, free 13.2 GB)
+18/02/08 19:39:42 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 20.4 KB, free 13.2 GB)
+18/02/08 19:39:42 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 20.4 KB, free: 13.2 GB)
+18/02/08 19:39:42 INFO SparkContext: Created broadcast 1 from textFile at MLUtils.scala:101
+START
+18/02/08 19:39:42 INFO FileInputFormat: Total input paths to process : 1
+18/02/08 19:39:42 INFO SparkContext: Starting job: first at GeneralizedLinearAlgorithm.scala:204
+18/02/08 19:39:42 INFO DAGScheduler: Got job 0 (first at GeneralizedLinearAlgorithm.scala:204) with 1 output partitions
+18/02/08 19:39:42 INFO DAGScheduler: Final stage: ResultStage 0 (first at GeneralizedLinearAlgorithm.scala:204)
+18/02/08 19:39:42 INFO DAGScheduler: Parents of final stage: List()
+18/02/08 19:39:42 INFO DAGScheduler: Missing parents: List()
+18/02/08 19:39:42 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[12] at map at GeneralizedLinearAlgorithm.scala:204), which has no missing parents
+18/02/08 19:39:42 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 4.4 KB, free 13.2 GB)
+18/02/08 19:39:42 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 2.5 KB, free 13.2 GB)
+18/02/08 19:39:42 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 2.5 KB, free: 13.2 GB)
+18/02/08 19:39:42 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1030
+18/02/08 19:39:42 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[12] at map at GeneralizedLinearAlgorithm.scala:204) (first 15 tasks are for partitions Vector(0))
+18/02/08 19:39:42 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks
+18/02/08 19:39:42 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:39:42 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+18/02/08 19:39:42 INFO Executor: Fetching spark://ip-172-31-3-143.us-west-2.compute.internal:39709/jars/simple-project_2.11-1.0.jar with timestamp 1518118781928
+18/02/08 19:39:43 INFO TransportClientFactory: Successfully created connection to ip-172-31-3-143.us-west-2.compute.internal/172.31.3.143:39709 after 37 ms (0 ms spent in bootstraps)
+18/02/08 19:39:43 INFO Utils: Fetching spark://ip-172-31-3-143.us-west-2.compute.internal:39709/jars/simple-project_2.11-1.0.jar to /tmp/spark-16abf60b-d1d0-4f8d-8ef3-c0abf74db79a/userFiles-c6c58a3e-4001-4a7f-ad39-14f8ee6d623a/fetchFileTemp3358352141545000847.tmp
+18/02/08 19:39:43 INFO Executor: Adding file:/tmp/spark-16abf60b-d1d0-4f8d-8ef3-c0abf74db79a/userFiles-c6c58a3e-4001-4a7f-ad39-14f8ee6d623a/simple-project_2.11-1.0.jar to class loader
+18/02/08 19:39:43 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:0+33554432
+18/02/08 19:39:44 INFO MemoryStore: Block rdd_5_0 stored as values in memory (estimated size 46.4 MB, free 13.1 GB)
+18/02/08 19:39:44 INFO BlockManagerInfo: Added rdd_5_0 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.4 MB, free: 13.1 GB)
+18/02/08 19:39:44 INFO Executor: 1 block locks were not released by TID = 0:
+[rdd_5_0]
+18/02/08 19:39:44 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 824 bytes result sent to driver
+18/02/08 19:39:44 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 1737 ms on localhost (executor driver) (1/1)
+18/02/08 19:39:44 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+18/02/08 19:39:44 INFO DAGScheduler: ResultStage 0 (first at GeneralizedLinearAlgorithm.scala:204) finished in 1.796 s
+18/02/08 19:39:44 INFO DAGScheduler: Job 0 finished: first at GeneralizedLinearAlgorithm.scala:204, took 1.854729 s
+18/02/08 19:39:44 INFO SparkContext: Starting job: count at DataValidators.scala:40
+18/02/08 19:39:44 INFO DAGScheduler: Got job 1 (count at DataValidators.scala:40) with 307 output partitions
+18/02/08 19:39:44 INFO DAGScheduler: Final stage: ResultStage 1 (count at DataValidators.scala:40)
+18/02/08 19:39:44 INFO DAGScheduler: Parents of final stage: List()
+18/02/08 19:39:44 INFO DAGScheduler: Missing parents: List()
+18/02/08 19:39:44 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[13] at filter at DataValidators.scala:40), which has no missing parents
+18/02/08 19:39:44 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 4.1 KB, free 13.1 GB)
+18/02/08 19:39:44 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 2.3 KB, free 13.1 GB)
+18/02/08 19:39:44 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 2.3 KB, free: 13.1 GB)
+18/02/08 19:39:44 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1030
+18/02/08 19:39:44 INFO DAGScheduler: Submitting 307 missing tasks from ResultStage 1 (MapPartitionsRDD[13] at filter at DataValidators.scala:40) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+18/02/08 19:39:44 INFO TaskSchedulerImpl: Adding task set 1.0 with 307 tasks
+18/02/08 19:39:44 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1, localhost, executor driver, partition 0, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:39:44 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+18/02/08 19:39:44 INFO BlockManager: Found block rdd_5_0 locally
+18/02/08 19:39:44 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 875 bytes result sent to driver
+18/02/08 19:39:44 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 2, localhost, executor driver, partition 1, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:39:44 INFO Executor: Running task 1.0 in stage 1.0 (TID 2)
+18/02/08 19:39:44 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 39 ms on localhost (executor driver) (1/307)
+18/02/08 19:39:44 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:33554432+33554432
+18/02/08 19:39:45 INFO MemoryStore: Block rdd_5_1 stored as values in memory (estimated size 46.6 MB, free 13.1 GB)
+18/02/08 19:39:45 INFO BlockManagerInfo: Added rdd_5_1 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.6 MB, free: 13.1 GB)
+18/02/08 19:39:45 INFO Executor: Finished task 1.0 in stage 1.0 (TID 2). 875 bytes result sent to driver
+18/02/08 19:39:45 INFO TaskSetManager: Starting task 2.0 in stage 1.0 (TID 3, localhost, executor driver, partition 2, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:39:45 INFO Executor: Running task 2.0 in stage 1.0 (TID 3)
+18/02/08 19:39:45 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 2) in 1197 ms on localhost (executor driver) (2/307)
+18/02/08 19:39:45 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:67108864+33554432
+18/02/08 19:39:47 INFO MemoryStore: Block rdd_5_2 stored as values in memory (estimated size 46.5 MB, free 13.0 GB)
+18/02/08 19:39:47 INFO BlockManagerInfo: Added rdd_5_2 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.5 MB, free: 13.0 GB)
+18/02/08 19:39:47 INFO Executor: Finished task 2.0 in stage 1.0 (TID 3). 875 bytes result sent to driver
+18/02/08 19:39:47 INFO TaskSetManager: Starting task 3.0 in stage 1.0 (TID 4, localhost, executor driver, partition 3, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:39:47 INFO Executor: Running task 3.0 in stage 1.0 (TID 4)
+18/02/08 19:39:47 INFO TaskSetManager: Finished task 2.0 in stage 1.0 (TID 3) in 1167 ms on localhost (executor driver) (3/307)
+18/02/08 19:39:47 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:100663296+33554432
+18/02/08 19:39:48 INFO MemoryStore: Block rdd_5_3 stored as values in memory (estimated size 46.3 MB, free 13.0 GB)
+18/02/08 19:39:48 INFO BlockManagerInfo: Added rdd_5_3 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.3 MB, free: 13.0 GB)
+18/02/08 19:39:48 INFO Executor: Finished task 3.0 in stage 1.0 (TID 4). 875 bytes result sent to driver
+18/02/08 19:39:48 INFO TaskSetManager: Starting task 4.0 in stage 1.0 (TID 5, localhost, executor driver, partition 4, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:39:48 INFO Executor: Running task 4.0 in stage 1.0 (TID 5)
+18/02/08 19:39:48 INFO TaskSetManager: Finished task 3.0 in stage 1.0 (TID 4) in 1214 ms on localhost (executor driver) (4/307)
+18/02/08 19:39:48 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:134217728+33554432
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 8
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 10
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 7
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 0
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 2
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 6
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 14
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 3
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 19
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 16
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 20
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 13
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 15
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 1
+18/02/08 19:39:49 INFO BlockManagerInfo: Removed broadcast_2_piece0 on ip-172-31-3-143.us-west-2.compute.internal:40380 in memory (size: 2.5 KB, free: 13.0 GB)
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 24
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 22
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 4
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 17
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 18
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 11
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 5
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 9
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 23
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 12
+18/02/08 19:39:49 INFO ContextCleaner: Cleaned accumulator 21
+18/02/08 19:39:49 INFO MemoryStore: Block rdd_5_4 stored as values in memory (estimated size 46.5 MB, free 12.9 GB)
+18/02/08 19:39:49 INFO BlockManagerInfo: Added rdd_5_4 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.5 MB, free: 12.9 GB)
+18/02/08 19:39:49 INFO Executor: Finished task 4.0 in stage 1.0 (TID 5). 875 bytes result sent to driver
+18/02/08 19:39:49 INFO TaskSetManager: Starting task 5.0 in stage 1.0 (TID 6, localhost, executor driver, partition 5, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:39:49 INFO Executor: Running task 5.0 in stage 1.0 (TID 6)
+18/02/08 19:39:49 INFO TaskSetManager: Finished task 4.0 in stage 1.0 (TID 5) in 1363 ms on localhost (executor driver) (5/307)
+18/02/08 19:39:49 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:167772160+33554432
+18/02/08 19:39:50 INFO MemoryStore: Block rdd_5_5 stored as values in memory (estimated size 46.5 MB, free 12.9 GB)
+18/02/08 19:39:50 INFO BlockManagerInfo: Added rdd_5_5 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.5 MB, free: 12.9 GB)
+18/02/08 19:39:50 INFO Executor: Finished task 5.0 in stage 1.0 (TID 6). 875 bytes result sent to driver
+18/02/08 19:39:50 INFO TaskSetManager: Starting task 6.0 in stage 1.0 (TID 7, localhost, executor driver, partition 6, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:39:50 INFO Executor: Running task 6.0 in stage 1.0 (TID 7)
+18/02/08 19:39:50 INFO TaskSetManager: Finished task 5.0 in stage 1.0 (TID 6) in 1204 ms on localhost (executor driver) (6/307)
+18/02/08 19:39:50 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:201326592+33554432
+18/02/08 19:39:51 INFO MemoryStore: Block rdd_5_6 stored as values in memory (estimated size 47.1 MB, free 12.8 GB)
+18/02/08 19:39:51 INFO BlockManagerInfo: Added rdd_5_6 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 47.1 MB, free: 12.8 GB)
+18/02/08 19:39:52 INFO Executor: Finished task 6.0 in stage 1.0 (TID 7). 875 bytes result sent to driver
+18/02/08 19:39:52 INFO TaskSetManager: Starting task 7.0 in stage 1.0 (TID 8, localhost, executor driver, partition 7, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:39:52 INFO Executor: Running task 7.0 in stage 1.0 (TID 8)
+18/02/08 19:39:52 INFO TaskSetManager: Finished task 6.0 in stage 1.0 (TID 7) in 1118 ms on localhost (executor driver) (7/307)
+18/02/08 19:39:52 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:234881024+33554432
+18/02/08 19:39:53 INFO MemoryStore: Block rdd_5_7 stored as values in memory (estimated size 46.6 MB, free 12.8 GB)
+18/02/08 19:39:53 INFO BlockManagerInfo: Added rdd_5_7 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.6 MB, free: 12.8 GB)
+18/02/08 19:39:53 INFO Executor: Finished task 7.0 in stage 1.0 (TID 8). 832 bytes result sent to driver
+18/02/08 19:39:53 INFO TaskSetManager: Starting task 8.0 in stage 1.0 (TID 9, localhost, executor driver, partition 8, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:39:53 INFO Executor: Running task 8.0 in stage 1.0 (TID 9)
+18/02/08 19:39:53 INFO TaskSetManager: Finished task 7.0 in stage 1.0 (TID 8) in 1085 ms on localhost (executor driver) (8/307)
+18/02/08 19:39:53 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:268435456+33554432
+18/02/08 19:39:54 INFO MemoryStore: Block rdd_5_8 stored as values in memory (estimated size 46.5 MB, free 12.7 GB)
+18/02/08 19:39:54 INFO BlockManagerInfo: Added rdd_5_8 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.5 MB, free: 12.7 GB)
+18/02/08 19:39:54 INFO Executor: Finished task 8.0 in stage 1.0 (TID 9). 875 bytes result sent to driver
+18/02/08 19:39:54 INFO TaskSetManager: Starting task 9.0 in stage 1.0 (TID 10, localhost, executor driver, partition 9, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:39:54 INFO Executor: Running task 9.0 in stage 1.0 (TID 10)
+18/02/08 19:39:54 INFO TaskSetManager: Finished task 8.0 in stage 1.0 (TID 9) in 1185 ms on localhost (executor driver) (9/307)
+18/02/08 19:39:54 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:301989888+33554432
+18/02/08 19:39:55 INFO MemoryStore: Block rdd_5_9 stored as values in memory (estimated size 46.6 MB, free 12.7 GB)
+18/02/08 19:39:55 INFO BlockManagerInfo: Added rdd_5_9 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.6 MB, free: 12.7 GB)
+18/02/08 19:39:55 INFO Executor: Finished task 9.0 in stage 1.0 (TID 10). 875 bytes result sent to driver
+18/02/08 19:39:55 INFO TaskSetManager: Starting task 10.0 in stage 1.0 (TID 11, localhost, executor driver, partition 10, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:39:55 INFO Executor: Running task 10.0 in stage 1.0 (TID 11)
+18/02/08 19:39:55 INFO TaskSetManager: Finished task 9.0 in stage 1.0 (TID 10) in 1130 ms on localhost (executor driver) (10/307)
+18/02/08 19:39:55 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:335544320+33554432
+18/02/08 19:39:56 INFO MemoryStore: Block rdd_5_10 stored as values in memory (estimated size 46.7 MB, free 12.7 GB)
+18/02/08 19:39:56 INFO BlockManagerInfo: Added rdd_5_10 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.7 MB, free: 12.7 GB)
+18/02/08 19:39:56 INFO Executor: Finished task 10.0 in stage 1.0 (TID 11). 832 bytes result sent to driver
+18/02/08 19:39:56 INFO TaskSetManager: Starting task 11.0 in stage 1.0 (TID 12, localhost, executor driver, partition 11, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:39:56 INFO Executor: Running task 11.0 in stage 1.0 (TID 12)
+18/02/08 19:39:56 INFO TaskSetManager: Finished task 10.0 in stage 1.0 (TID 11) in 1107 ms on localhost (executor driver) (11/307)
+18/02/08 19:39:56 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:369098752+33554432
+18/02/08 19:39:57 INFO MemoryStore: Block rdd_5_11 stored as values in memory (estimated size 46.8 MB, free 12.6 GB)
+18/02/08 19:39:57 INFO BlockManagerInfo: Added rdd_5_11 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.8 MB, free: 12.6 GB)
+18/02/08 19:39:57 INFO Executor: Finished task 11.0 in stage 1.0 (TID 12). 875 bytes result sent to driver
+18/02/08 19:39:57 INFO TaskSetManager: Starting task 12.0 in stage 1.0 (TID 13, localhost, executor driver, partition 12, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:39:57 INFO Executor: Running task 12.0 in stage 1.0 (TID 13)
+18/02/08 19:39:57 INFO TaskSetManager: Finished task 11.0 in stage 1.0 (TID 12) in 1203 ms on localhost (executor driver) (12/307)
+18/02/08 19:39:57 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:402653184+33554432
+18/02/08 19:39:59 INFO MemoryStore: Block rdd_5_12 stored as values in memory (estimated size 46.1 MB, free 12.6 GB)
+18/02/08 19:39:59 INFO BlockManagerInfo: Added rdd_5_12 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.1 MB, free: 12.6 GB)
+18/02/08 19:39:59 INFO Executor: Finished task 12.0 in stage 1.0 (TID 13). 875 bytes result sent to driver
+18/02/08 19:39:59 INFO TaskSetManager: Starting task 13.0 in stage 1.0 (TID 14, localhost, executor driver, partition 13, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:39:59 INFO Executor: Running task 13.0 in stage 1.0 (TID 14)
+18/02/08 19:39:59 INFO TaskSetManager: Finished task 12.0 in stage 1.0 (TID 13) in 1727 ms on localhost (executor driver) (13/307)
+18/02/08 19:39:59 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:436207616+33554432
+18/02/08 19:40:00 INFO MemoryStore: Block rdd_5_13 stored as values in memory (estimated size 46.2 MB, free 12.5 GB)
+18/02/08 19:40:00 INFO BlockManagerInfo: Added rdd_5_13 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.2 MB, free: 12.5 GB)
+18/02/08 19:40:00 INFO Executor: Finished task 13.0 in stage 1.0 (TID 14). 832 bytes result sent to driver
+18/02/08 19:40:00 INFO TaskSetManager: Starting task 14.0 in stage 1.0 (TID 15, localhost, executor driver, partition 14, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:00 INFO Executor: Running task 14.0 in stage 1.0 (TID 15)
+18/02/08 19:40:00 INFO TaskSetManager: Finished task 13.0 in stage 1.0 (TID 14) in 1075 ms on localhost (executor driver) (14/307)
+18/02/08 19:40:00 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:469762048+33554432
+18/02/08 19:40:01 INFO MemoryStore: Block rdd_5_14 stored as values in memory (estimated size 46.6 MB, free 12.5 GB)
+18/02/08 19:40:01 INFO BlockManagerInfo: Added rdd_5_14 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.6 MB, free: 12.5 GB)
+18/02/08 19:40:01 INFO Executor: Finished task 14.0 in stage 1.0 (TID 15). 875 bytes result sent to driver
+18/02/08 19:40:01 INFO TaskSetManager: Starting task 15.0 in stage 1.0 (TID 16, localhost, executor driver, partition 15, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:01 INFO Executor: Running task 15.0 in stage 1.0 (TID 16)
+18/02/08 19:40:01 INFO TaskSetManager: Finished task 14.0 in stage 1.0 (TID 15) in 1245 ms on localhost (executor driver) (15/307)
+18/02/08 19:40:01 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:503316480+33554432
+18/02/08 19:40:02 INFO MemoryStore: Block rdd_5_15 stored as values in memory (estimated size 46.4 MB, free 12.4 GB)
+18/02/08 19:40:02 INFO BlockManagerInfo: Added rdd_5_15 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.4 MB, free: 12.4 GB)
+18/02/08 19:40:02 INFO Executor: Finished task 15.0 in stage 1.0 (TID 16). 832 bytes result sent to driver
+18/02/08 19:40:02 INFO TaskSetManager: Starting task 16.0 in stage 1.0 (TID 17, localhost, executor driver, partition 16, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:02 INFO Executor: Running task 16.0 in stage 1.0 (TID 17)
+18/02/08 19:40:02 INFO TaskSetManager: Finished task 15.0 in stage 1.0 (TID 16) in 1078 ms on localhost (executor driver) (16/307)
+18/02/08 19:40:02 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:536870912+33554432
+18/02/08 19:40:03 INFO MemoryStore: Block rdd_5_16 stored as values in memory (estimated size 46.4 MB, free 12.4 GB)
+18/02/08 19:40:03 INFO BlockManagerInfo: Added rdd_5_16 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.4 MB, free: 12.4 GB)
+18/02/08 19:40:03 INFO Executor: Finished task 16.0 in stage 1.0 (TID 17). 832 bytes result sent to driver
+18/02/08 19:40:03 INFO TaskSetManager: Starting task 17.0 in stage 1.0 (TID 18, localhost, executor driver, partition 17, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:03 INFO Executor: Running task 17.0 in stage 1.0 (TID 18)
+18/02/08 19:40:03 INFO TaskSetManager: Finished task 16.0 in stage 1.0 (TID 17) in 1083 ms on localhost (executor driver) (17/307)
+18/02/08 19:40:03 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:570425344+33554432
+18/02/08 19:40:05 INFO MemoryStore: Block rdd_5_17 stored as values in memory (estimated size 46.5 MB, free 12.3 GB)
+18/02/08 19:40:05 INFO BlockManagerInfo: Added rdd_5_17 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.5 MB, free: 12.3 GB)
+18/02/08 19:40:05 INFO Executor: Finished task 17.0 in stage 1.0 (TID 18). 918 bytes result sent to driver
+18/02/08 19:40:05 INFO TaskSetManager: Starting task 18.0 in stage 1.0 (TID 19, localhost, executor driver, partition 18, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:05 INFO Executor: Running task 18.0 in stage 1.0 (TID 19)
+18/02/08 19:40:05 INFO TaskSetManager: Finished task 17.0 in stage 1.0 (TID 18) in 1185 ms on localhost (executor driver) (18/307)
+18/02/08 19:40:05 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:603979776+33554432
+18/02/08 19:40:06 INFO MemoryStore: Block rdd_5_18 stored as values in memory (estimated size 46.8 MB, free 12.3 GB)
+18/02/08 19:40:06 INFO BlockManagerInfo: Added rdd_5_18 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.8 MB, free: 12.3 GB)
+18/02/08 19:40:06 INFO Executor: Finished task 18.0 in stage 1.0 (TID 19). 789 bytes result sent to driver
+18/02/08 19:40:06 INFO TaskSetManager: Starting task 19.0 in stage 1.0 (TID 20, localhost, executor driver, partition 19, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:06 INFO Executor: Running task 19.0 in stage 1.0 (TID 20)
+18/02/08 19:40:06 INFO TaskSetManager: Finished task 18.0 in stage 1.0 (TID 19) in 1077 ms on localhost (executor driver) (19/307)
+18/02/08 19:40:06 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:637534208+33554432
+18/02/08 19:40:07 INFO MemoryStore: Block rdd_5_19 stored as values in memory (estimated size 46.3 MB, free 12.2 GB)
+18/02/08 19:40:07 INFO BlockManagerInfo: Added rdd_5_19 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.3 MB, free: 12.2 GB)
+18/02/08 19:40:07 INFO Executor: Finished task 19.0 in stage 1.0 (TID 20). 875 bytes result sent to driver
+18/02/08 19:40:07 INFO TaskSetManager: Starting task 20.0 in stage 1.0 (TID 21, localhost, executor driver, partition 20, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:07 INFO Executor: Running task 20.0 in stage 1.0 (TID 21)
+18/02/08 19:40:07 INFO TaskSetManager: Finished task 19.0 in stage 1.0 (TID 20) in 1246 ms on localhost (executor driver) (20/307)
+18/02/08 19:40:07 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:671088640+33554432
+18/02/08 19:40:08 INFO MemoryStore: Block rdd_5_20 stored as values in memory (estimated size 46.1 MB, free 12.2 GB)
+18/02/08 19:40:08 INFO BlockManagerInfo: Added rdd_5_20 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.1 MB, free: 12.2 GB)
+18/02/08 19:40:08 INFO Executor: Finished task 20.0 in stage 1.0 (TID 21). 832 bytes result sent to driver
+18/02/08 19:40:08 INFO TaskSetManager: Starting task 21.0 in stage 1.0 (TID 22, localhost, executor driver, partition 21, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:08 INFO Executor: Running task 21.0 in stage 1.0 (TID 22)
+18/02/08 19:40:08 INFO TaskSetManager: Finished task 20.0 in stage 1.0 (TID 21) in 1085 ms on localhost (executor driver) (21/307)
+18/02/08 19:40:08 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:704643072+33554432
+18/02/08 19:40:10 INFO MemoryStore: Block rdd_5_21 stored as values in memory (estimated size 46.8 MB, free 12.2 GB)
+18/02/08 19:40:10 INFO BlockManagerInfo: Added rdd_5_21 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.8 MB, free: 12.2 GB)
+18/02/08 19:40:10 INFO Executor: Finished task 21.0 in stage 1.0 (TID 22). 875 bytes result sent to driver
+18/02/08 19:40:10 INFO TaskSetManager: Starting task 22.0 in stage 1.0 (TID 23, localhost, executor driver, partition 22, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:10 INFO Executor: Running task 22.0 in stage 1.0 (TID 23)
+18/02/08 19:40:10 INFO TaskSetManager: Finished task 21.0 in stage 1.0 (TID 22) in 1848 ms on localhost (executor driver) (22/307)
+18/02/08 19:40:10 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:738197504+33554432
+18/02/08 19:40:11 INFO MemoryStore: Block rdd_5_22 stored as values in memory (estimated size 46.4 MB, free 12.1 GB)
+18/02/08 19:40:11 INFO BlockManagerInfo: Added rdd_5_22 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.4 MB, free: 12.1 GB)
+18/02/08 19:40:11 INFO Executor: Finished task 22.0 in stage 1.0 (TID 23). 832 bytes result sent to driver
+18/02/08 19:40:11 INFO TaskSetManager: Starting task 23.0 in stage 1.0 (TID 24, localhost, executor driver, partition 23, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:11 INFO Executor: Running task 23.0 in stage 1.0 (TID 24)
+18/02/08 19:40:11 INFO TaskSetManager: Finished task 22.0 in stage 1.0 (TID 23) in 1091 ms on localhost (executor driver) (23/307)
+18/02/08 19:40:11 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:771751936+33554432
+18/02/08 19:40:12 INFO MemoryStore: Block rdd_5_23 stored as values in memory (estimated size 46.2 MB, free 12.1 GB)
+18/02/08 19:40:12 INFO BlockManagerInfo: Added rdd_5_23 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.2 MB, free: 12.1 GB)
+18/02/08 19:40:12 INFO Executor: Finished task 23.0 in stage 1.0 (TID 24). 832 bytes result sent to driver
+18/02/08 19:40:12 INFO TaskSetManager: Starting task 24.0 in stage 1.0 (TID 25, localhost, executor driver, partition 24, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:12 INFO Executor: Running task 24.0 in stage 1.0 (TID 25)
+18/02/08 19:40:12 INFO TaskSetManager: Finished task 23.0 in stage 1.0 (TID 24) in 1076 ms on localhost (executor driver) (24/307)
+18/02/08 19:40:12 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:805306368+33554432
+18/02/08 19:40:13 INFO MemoryStore: Block rdd_5_24 stored as values in memory (estimated size 46.6 MB, free 12.0 GB)
+18/02/08 19:40:13 INFO BlockManagerInfo: Added rdd_5_24 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.6 MB, free: 12.0 GB)
+18/02/08 19:40:13 INFO Executor: Finished task 24.0 in stage 1.0 (TID 25). 918 bytes result sent to driver
+18/02/08 19:40:13 INFO TaskSetManager: Starting task 25.0 in stage 1.0 (TID 26, localhost, executor driver, partition 25, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:13 INFO Executor: Running task 25.0 in stage 1.0 (TID 26)
+18/02/08 19:40:13 INFO TaskSetManager: Finished task 24.0 in stage 1.0 (TID 25) in 1209 ms on localhost (executor driver) (25/307)
+18/02/08 19:40:13 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:838860800+33554432
+18/02/08 19:40:14 INFO MemoryStore: Block rdd_5_25 stored as values in memory (estimated size 46.6 MB, free 12.0 GB)
+18/02/08 19:40:14 INFO BlockManagerInfo: Added rdd_5_25 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.6 MB, free: 12.0 GB)
+18/02/08 19:40:14 INFO Executor: Finished task 25.0 in stage 1.0 (TID 26). 789 bytes result sent to driver
+18/02/08 19:40:14 INFO TaskSetManager: Starting task 26.0 in stage 1.0 (TID 27, localhost, executor driver, partition 26, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:14 INFO Executor: Running task 26.0 in stage 1.0 (TID 27)
+18/02/08 19:40:14 INFO TaskSetManager: Finished task 25.0 in stage 1.0 (TID 26) in 1075 ms on localhost (executor driver) (26/307)
+18/02/08 19:40:14 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:872415232+33554432
+18/02/08 19:40:15 INFO MemoryStore: Block rdd_5_26 stored as values in memory (estimated size 46.3 MB, free 11.9 GB)
+18/02/08 19:40:15 INFO BlockManagerInfo: Added rdd_5_26 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.3 MB, free: 11.9 GB)
+18/02/08 19:40:15 INFO Executor: Finished task 26.0 in stage 1.0 (TID 27). 832 bytes result sent to driver
+18/02/08 19:40:15 INFO TaskSetManager: Starting task 27.0 in stage 1.0 (TID 28, localhost, executor driver, partition 27, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:15 INFO Executor: Running task 27.0 in stage 1.0 (TID 28)
+18/02/08 19:40:15 INFO TaskSetManager: Finished task 26.0 in stage 1.0 (TID 27) in 1087 ms on localhost (executor driver) (27/307)
+18/02/08 19:40:15 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:905969664+33554432
+18/02/08 19:40:17 INFO MemoryStore: Block rdd_5_27 stored as values in memory (estimated size 46.1 MB, free 11.9 GB)
+18/02/08 19:40:17 INFO BlockManagerInfo: Added rdd_5_27 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.1 MB, free: 11.9 GB)
+18/02/08 19:40:17 INFO Executor: Finished task 27.0 in stage 1.0 (TID 28). 918 bytes result sent to driver
+18/02/08 19:40:17 INFO TaskSetManager: Starting task 28.0 in stage 1.0 (TID 29, localhost, executor driver, partition 28, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:17 INFO Executor: Running task 28.0 in stage 1.0 (TID 29)
+18/02/08 19:40:17 INFO TaskSetManager: Finished task 27.0 in stage 1.0 (TID 28) in 1346 ms on localhost (executor driver) (28/307)
+18/02/08 19:40:17 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:939524096+33554432
+18/02/08 19:40:18 INFO MemoryStore: Block rdd_5_28 stored as values in memory (estimated size 46.6 MB, free 11.8 GB)
+18/02/08 19:40:18 INFO BlockManagerInfo: Added rdd_5_28 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.6 MB, free: 11.8 GB)
+18/02/08 19:40:18 INFO Executor: Finished task 28.0 in stage 1.0 (TID 29). 832 bytes result sent to driver
+18/02/08 19:40:18 INFO TaskSetManager: Starting task 29.0 in stage 1.0 (TID 30, localhost, executor driver, partition 29, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:18 INFO Executor: Running task 29.0 in stage 1.0 (TID 30)
+18/02/08 19:40:18 INFO TaskSetManager: Finished task 28.0 in stage 1.0 (TID 29) in 1077 ms on localhost (executor driver) (29/307)
+18/02/08 19:40:18 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:973078528+33554432
+18/02/08 19:40:19 INFO MemoryStore: Block rdd_5_29 stored as values in memory (estimated size 46.7 MB, free 11.8 GB)
+18/02/08 19:40:19 INFO BlockManagerInfo: Added rdd_5_29 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.7 MB, free: 11.8 GB)
+18/02/08 19:40:19 INFO Executor: Finished task 29.0 in stage 1.0 (TID 30). 832 bytes result sent to driver
+18/02/08 19:40:19 INFO TaskSetManager: Starting task 30.0 in stage 1.0 (TID 31, localhost, executor driver, partition 30, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:19 INFO Executor: Running task 30.0 in stage 1.0 (TID 31)
+18/02/08 19:40:19 INFO TaskSetManager: Finished task 29.0 in stage 1.0 (TID 30) in 1100 ms on localhost (executor driver) (30/307)
+18/02/08 19:40:19 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1006632960+33554432
+18/02/08 19:40:20 INFO MemoryStore: Block rdd_5_30 stored as values in memory (estimated size 46.6 MB, free 11.7 GB)
+18/02/08 19:40:20 INFO BlockManagerInfo: Added rdd_5_30 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.6 MB, free: 11.8 GB)
+18/02/08 19:40:20 INFO Executor: Finished task 30.0 in stage 1.0 (TID 31). 832 bytes result sent to driver
+18/02/08 19:40:20 INFO TaskSetManager: Starting task 31.0 in stage 1.0 (TID 32, localhost, executor driver, partition 31, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:20 INFO Executor: Running task 31.0 in stage 1.0 (TID 32)
+18/02/08 19:40:20 INFO TaskSetManager: Finished task 30.0 in stage 1.0 (TID 31) in 1209 ms on localhost (executor driver) (31/307)
+18/02/08 19:40:20 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1040187392+33554432
+18/02/08 19:40:21 INFO MemoryStore: Block rdd_5_31 stored as values in memory (estimated size 46.9 MB, free 11.7 GB)
+18/02/08 19:40:21 INFO BlockManagerInfo: Added rdd_5_31 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.9 MB, free: 11.7 GB)
+18/02/08 19:40:21 INFO Executor: Finished task 31.0 in stage 1.0 (TID 32). 789 bytes result sent to driver
+18/02/08 19:40:21 INFO TaskSetManager: Starting task 32.0 in stage 1.0 (TID 33, localhost, executor driver, partition 32, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:21 INFO Executor: Running task 32.0 in stage 1.0 (TID 33)
+18/02/08 19:40:21 INFO TaskSetManager: Finished task 31.0 in stage 1.0 (TID 32) in 1104 ms on localhost (executor driver) (32/307)
+18/02/08 19:40:21 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1073741824+33554432
+18/02/08 19:40:22 INFO MemoryStore: Block rdd_5_32 stored as values in memory (estimated size 45.7 MB, free 11.7 GB)
+18/02/08 19:40:22 INFO BlockManagerInfo: Added rdd_5_32 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 45.7 MB, free: 11.7 GB)
+18/02/08 19:40:22 INFO Executor: Finished task 32.0 in stage 1.0 (TID 33). 789 bytes result sent to driver
+18/02/08 19:40:22 INFO TaskSetManager: Starting task 33.0 in stage 1.0 (TID 34, localhost, executor driver, partition 33, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:22 INFO Executor: Running task 33.0 in stage 1.0 (TID 34)
+18/02/08 19:40:22 INFO TaskSetManager: Finished task 32.0 in stage 1.0 (TID 33) in 1080 ms on localhost (executor driver) (33/307)
+18/02/08 19:40:22 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1107296256+33554432
+18/02/08 19:40:24 INFO MemoryStore: Block rdd_5_33 stored as values in memory (estimated size 47.3 MB, free 11.6 GB)
+18/02/08 19:40:24 INFO BlockManagerInfo: Added rdd_5_33 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 47.3 MB, free: 11.6 GB)
+18/02/08 19:40:24 INFO Executor: Finished task 33.0 in stage 1.0 (TID 34). 832 bytes result sent to driver
+18/02/08 19:40:24 INFO TaskSetManager: Starting task 34.0 in stage 1.0 (TID 35, localhost, executor driver, partition 34, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:24 INFO Executor: Running task 34.0 in stage 1.0 (TID 35)
+18/02/08 19:40:24 INFO TaskSetManager: Finished task 33.0 in stage 1.0 (TID 34) in 1325 ms on localhost (executor driver) (34/307)
+18/02/08 19:40:24 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1140850688+33554432
+18/02/08 19:40:25 INFO MemoryStore: Block rdd_5_34 stored as values in memory (estimated size 46.5 MB, free 11.6 GB)
+18/02/08 19:40:25 INFO BlockManagerInfo: Added rdd_5_34 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.5 MB, free: 11.6 GB)
+18/02/08 19:40:25 INFO Executor: Finished task 34.0 in stage 1.0 (TID 35). 832 bytes result sent to driver
+18/02/08 19:40:25 INFO TaskSetManager: Starting task 35.0 in stage 1.0 (TID 36, localhost, executor driver, partition 35, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:25 INFO Executor: Running task 35.0 in stage 1.0 (TID 36)
+18/02/08 19:40:25 INFO TaskSetManager: Finished task 34.0 in stage 1.0 (TID 35) in 1091 ms on localhost (executor driver) (35/307)
+18/02/08 19:40:25 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1174405120+33554432
+18/02/08 19:40:26 INFO MemoryStore: Block rdd_5_35 stored as values in memory (estimated size 47.2 MB, free 11.5 GB)
+18/02/08 19:40:26 INFO BlockManagerInfo: Added rdd_5_35 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 47.2 MB, free: 11.5 GB)
+18/02/08 19:40:26 INFO Executor: Finished task 35.0 in stage 1.0 (TID 36). 832 bytes result sent to driver
+18/02/08 19:40:26 INFO TaskSetManager: Starting task 36.0 in stage 1.0 (TID 37, localhost, executor driver, partition 36, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:26 INFO Executor: Running task 36.0 in stage 1.0 (TID 37)
+18/02/08 19:40:26 INFO TaskSetManager: Finished task 35.0 in stage 1.0 (TID 36) in 1097 ms on localhost (executor driver) (36/307)
+18/02/08 19:40:26 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1207959552+33554432
+18/02/08 19:40:29 INFO MemoryStore: Block rdd_5_36 stored as values in memory (estimated size 46.5 MB, free 11.5 GB)
+18/02/08 19:40:29 INFO BlockManagerInfo: Added rdd_5_36 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.5 MB, free: 11.5 GB)
+18/02/08 19:40:29 INFO Executor: Finished task 36.0 in stage 1.0 (TID 37). 832 bytes result sent to driver
+18/02/08 19:40:29 INFO TaskSetManager: Starting task 37.0 in stage 1.0 (TID 38, localhost, executor driver, partition 37, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:29 INFO TaskSetManager: Finished task 36.0 in stage 1.0 (TID 37) in 2754 ms on localhost (executor driver) (37/307)
+18/02/08 19:40:29 INFO Executor: Running task 37.0 in stage 1.0 (TID 38)
+18/02/08 19:40:29 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1241513984+33554432
+18/02/08 19:40:30 INFO MemoryStore: Block rdd_5_37 stored as values in memory (estimated size 46.5 MB, free 11.4 GB)
+18/02/08 19:40:30 INFO BlockManagerInfo: Added rdd_5_37 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.5 MB, free: 11.4 GB)
+18/02/08 19:40:30 INFO Executor: Finished task 37.0 in stage 1.0 (TID 38). 789 bytes result sent to driver
+18/02/08 19:40:30 INFO TaskSetManager: Starting task 38.0 in stage 1.0 (TID 39, localhost, executor driver, partition 38, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:30 INFO Executor: Running task 38.0 in stage 1.0 (TID 39)
+18/02/08 19:40:30 INFO TaskSetManager: Finished task 37.0 in stage 1.0 (TID 38) in 1082 ms on localhost (executor driver) (38/307)
+18/02/08 19:40:30 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1275068416+33554432
+18/02/08 19:40:31 INFO MemoryStore: Block rdd_5_38 stored as values in memory (estimated size 46.9 MB, free 11.4 GB)
+18/02/08 19:40:31 INFO BlockManagerInfo: Added rdd_5_38 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.9 MB, free: 11.4 GB)
+18/02/08 19:40:31 INFO Executor: Finished task 38.0 in stage 1.0 (TID 39). 832 bytes result sent to driver
+18/02/08 19:40:31 INFO TaskSetManager: Starting task 39.0 in stage 1.0 (TID 40, localhost, executor driver, partition 39, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:31 INFO Executor: Running task 39.0 in stage 1.0 (TID 40)
+18/02/08 19:40:31 INFO TaskSetManager: Finished task 38.0 in stage 1.0 (TID 39) in 1112 ms on localhost (executor driver) (39/307)
+18/02/08 19:40:31 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1308622848+33554432
+18/02/08 19:40:32 INFO MemoryStore: Block rdd_5_39 stored as values in memory (estimated size 46.8 MB, free 11.3 GB)
+18/02/08 19:40:32 INFO BlockManagerInfo: Added rdd_5_39 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.8 MB, free: 11.3 GB)
+18/02/08 19:40:32 INFO Executor: Finished task 39.0 in stage 1.0 (TID 40). 832 bytes result sent to driver
+18/02/08 19:40:32 INFO TaskSetManager: Starting task 40.0 in stage 1.0 (TID 41, localhost, executor driver, partition 40, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:32 INFO Executor: Running task 40.0 in stage 1.0 (TID 41)
+18/02/08 19:40:32 INFO TaskSetManager: Finished task 39.0 in stage 1.0 (TID 40) in 1259 ms on localhost (executor driver) (40/307)
+18/02/08 19:40:32 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1342177280+33554432
+18/02/08 19:40:33 INFO MemoryStore: Block rdd_5_40 stored as values in memory (estimated size 46.5 MB, free 11.3 GB)
+18/02/08 19:40:33 INFO BlockManagerInfo: Added rdd_5_40 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.5 MB, free: 11.3 GB)
+18/02/08 19:40:33 INFO Executor: Finished task 40.0 in stage 1.0 (TID 41). 832 bytes result sent to driver
+18/02/08 19:40:33 INFO TaskSetManager: Starting task 41.0 in stage 1.0 (TID 42, localhost, executor driver, partition 41, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:33 INFO Executor: Running task 41.0 in stage 1.0 (TID 42)
+18/02/08 19:40:33 INFO TaskSetManager: Finished task 40.0 in stage 1.0 (TID 41) in 1093 ms on localhost (executor driver) (41/307)
+18/02/08 19:40:33 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1375731712+33554432
+18/02/08 19:40:34 INFO MemoryStore: Block rdd_5_41 stored as values in memory (estimated size 46.8 MB, free 11.2 GB)
+18/02/08 19:40:34 INFO BlockManagerInfo: Added rdd_5_41 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.8 MB, free: 11.2 GB)
+18/02/08 19:40:34 INFO Executor: Finished task 41.0 in stage 1.0 (TID 42). 832 bytes result sent to driver
+18/02/08 19:40:34 INFO TaskSetManager: Starting task 42.0 in stage 1.0 (TID 43, localhost, executor driver, partition 42, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:34 INFO Executor: Running task 42.0 in stage 1.0 (TID 43)
+18/02/08 19:40:34 INFO TaskSetManager: Finished task 41.0 in stage 1.0 (TID 42) in 1190 ms on localhost (executor driver) (42/307)
+18/02/08 19:40:34 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1409286144+33554432
+18/02/08 19:40:35 INFO MemoryStore: Block rdd_5_42 stored as values in memory (estimated size 46.4 MB, free 11.2 GB)
+18/02/08 19:40:35 INFO BlockManagerInfo: Added rdd_5_42 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.4 MB, free: 11.2 GB)
+18/02/08 19:40:35 INFO Executor: Finished task 42.0 in stage 1.0 (TID 43). 789 bytes result sent to driver
+18/02/08 19:40:35 INFO TaskSetManager: Starting task 43.0 in stage 1.0 (TID 44, localhost, executor driver, partition 43, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:35 INFO Executor: Running task 43.0 in stage 1.0 (TID 44)
+18/02/08 19:40:35 INFO TaskSetManager: Finished task 42.0 in stage 1.0 (TID 43) in 1078 ms on localhost (executor driver) (43/307)
+18/02/08 19:40:35 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1442840576+33554432
+18/02/08 19:40:37 INFO MemoryStore: Block rdd_5_43 stored as values in memory (estimated size 46.6 MB, free 11.2 GB)
+18/02/08 19:40:37 INFO BlockManagerInfo: Added rdd_5_43 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.6 MB, free: 11.2 GB)
+18/02/08 19:40:37 INFO Executor: Finished task 43.0 in stage 1.0 (TID 44). 875 bytes result sent to driver
+18/02/08 19:40:37 INFO TaskSetManager: Starting task 44.0 in stage 1.0 (TID 45, localhost, executor driver, partition 44, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:37 INFO Executor: Running task 44.0 in stage 1.0 (TID 45)
+18/02/08 19:40:37 INFO TaskSetManager: Finished task 43.0 in stage 1.0 (TID 44) in 1271 ms on localhost (executor driver) (44/307)
+18/02/08 19:40:37 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1476395008+33554432
+18/02/08 19:40:38 INFO MemoryStore: Block rdd_5_44 stored as values in memory (estimated size 46.8 MB, free 11.1 GB)
+18/02/08 19:40:38 INFO BlockManagerInfo: Added rdd_5_44 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.8 MB, free: 11.1 GB)
+18/02/08 19:40:38 INFO Executor: Finished task 44.0 in stage 1.0 (TID 45). 832 bytes result sent to driver
+18/02/08 19:40:38 INFO TaskSetManager: Starting task 45.0 in stage 1.0 (TID 46, localhost, executor driver, partition 45, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:38 INFO TaskSetManager: Finished task 44.0 in stage 1.0 (TID 45) in 1072 ms on localhost (executor driver) (45/307)
+18/02/08 19:40:38 INFO Executor: Running task 45.0 in stage 1.0 (TID 46)
+18/02/08 19:40:38 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1509949440+33554432
+18/02/08 19:40:39 INFO MemoryStore: Block rdd_5_45 stored as values in memory (estimated size 46.3 MB, free 11.1 GB)
+18/02/08 19:40:39 INFO BlockManagerInfo: Added rdd_5_45 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.3 MB, free: 11.1 GB)
+18/02/08 19:40:39 INFO Executor: Finished task 45.0 in stage 1.0 (TID 46). 832 bytes result sent to driver
+18/02/08 19:40:39 INFO TaskSetManager: Starting task 46.0 in stage 1.0 (TID 47, localhost, executor driver, partition 46, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:39 INFO Executor: Running task 46.0 in stage 1.0 (TID 47)
+18/02/08 19:40:39 INFO TaskSetManager: Finished task 45.0 in stage 1.0 (TID 46) in 1091 ms on localhost (executor driver) (46/307)
+18/02/08 19:40:39 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1543503872+33554432
+18/02/08 19:40:40 INFO MemoryStore: Block rdd_5_46 stored as values in memory (estimated size 46.3 MB, free 11.0 GB)
+18/02/08 19:40:40 INFO BlockManagerInfo: Added rdd_5_46 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.3 MB, free: 11.0 GB)
+18/02/08 19:40:40 INFO Executor: Finished task 46.0 in stage 1.0 (TID 47). 832 bytes result sent to driver
+18/02/08 19:40:40 INFO TaskSetManager: Starting task 47.0 in stage 1.0 (TID 48, localhost, executor driver, partition 47, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:40 INFO Executor: Running task 47.0 in stage 1.0 (TID 48)
+18/02/08 19:40:40 INFO TaskSetManager: Finished task 46.0 in stage 1.0 (TID 47) in 1075 ms on localhost (executor driver) (47/307)
+18/02/08 19:40:40 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1577058304+33554432
+18/02/08 19:40:41 INFO MemoryStore: Block rdd_5_47 stored as values in memory (estimated size 46.4 MB, free 11.0 GB)
+18/02/08 19:40:41 INFO BlockManagerInfo: Added rdd_5_47 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.4 MB, free: 11.0 GB)
+18/02/08 19:40:41 INFO Executor: Finished task 47.0 in stage 1.0 (TID 48). 875 bytes result sent to driver
+18/02/08 19:40:41 INFO TaskSetManager: Starting task 48.0 in stage 1.0 (TID 49, localhost, executor driver, partition 48, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:41 INFO Executor: Running task 48.0 in stage 1.0 (TID 49)
+18/02/08 19:40:41 INFO TaskSetManager: Finished task 47.0 in stage 1.0 (TID 48) in 1254 ms on localhost (executor driver) (48/307)
+18/02/08 19:40:41 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1610612736+33554432
+18/02/08 19:40:42 INFO MemoryStore: Block rdd_5_48 stored as values in memory (estimated size 46.6 MB, free 10.9 GB)
+18/02/08 19:40:42 INFO BlockManagerInfo: Added rdd_5_48 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.6 MB, free: 10.9 GB)
+18/02/08 19:40:42 INFO Executor: Finished task 48.0 in stage 1.0 (TID 49). 832 bytes result sent to driver
+18/02/08 19:40:42 INFO TaskSetManager: Starting task 49.0 in stage 1.0 (TID 50, localhost, executor driver, partition 49, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:42 INFO Executor: Running task 49.0 in stage 1.0 (TID 50)
+18/02/08 19:40:42 INFO TaskSetManager: Finished task 48.0 in stage 1.0 (TID 49) in 1077 ms on localhost (executor driver) (49/307)
+18/02/08 19:40:42 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1644167168+33554432
+18/02/08 19:40:43 INFO MemoryStore: Block rdd_5_49 stored as values in memory (estimated size 46.3 MB, free 10.9 GB)
+18/02/08 19:40:43 INFO BlockManagerInfo: Added rdd_5_49 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.3 MB, free: 10.9 GB)
+18/02/08 19:40:43 INFO Executor: Finished task 49.0 in stage 1.0 (TID 50). 832 bytes result sent to driver
+18/02/08 19:40:43 INFO TaskSetManager: Starting task 50.0 in stage 1.0 (TID 51, localhost, executor driver, partition 50, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:43 INFO Executor: Running task 50.0 in stage 1.0 (TID 51)
+18/02/08 19:40:43 INFO TaskSetManager: Finished task 49.0 in stage 1.0 (TID 50) in 1076 ms on localhost (executor driver) (50/307)
+18/02/08 19:40:43 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1677721600+33554432
+18/02/08 19:40:44 INFO MemoryStore: Block rdd_5_50 stored as values in memory (estimated size 46.6 MB, free 10.8 GB)
+18/02/08 19:40:44 INFO BlockManagerInfo: Added rdd_5_50 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.6 MB, free: 10.8 GB)
+18/02/08 19:40:44 INFO Executor: Finished task 50.0 in stage 1.0 (TID 51). 832 bytes result sent to driver
+18/02/08 19:40:44 INFO TaskSetManager: Starting task 51.0 in stage 1.0 (TID 52, localhost, executor driver, partition 51, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:44 INFO Executor: Running task 51.0 in stage 1.0 (TID 52)
+18/02/08 19:40:44 INFO TaskSetManager: Finished task 50.0 in stage 1.0 (TID 51) in 1097 ms on localhost (executor driver) (51/307)
+18/02/08 19:40:44 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1711276032+33554432
+18/02/08 19:40:46 INFO MemoryStore: Block rdd_5_51 stored as values in memory (estimated size 46.3 MB, free 10.8 GB)
+18/02/08 19:40:46 INFO BlockManagerInfo: Added rdd_5_51 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.3 MB, free: 10.8 GB)
+18/02/08 19:40:46 INFO Executor: Finished task 51.0 in stage 1.0 (TID 52). 875 bytes result sent to driver
+18/02/08 19:40:46 INFO TaskSetManager: Starting task 52.0 in stage 1.0 (TID 53, localhost, executor driver, partition 52, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:46 INFO Executor: Running task 52.0 in stage 1.0 (TID 53)
+18/02/08 19:40:46 INFO TaskSetManager: Finished task 51.0 in stage 1.0 (TID 52) in 1267 ms on localhost (executor driver) (52/307)
+18/02/08 19:40:46 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1744830464+33554432
+18/02/08 19:40:47 INFO MemoryStore: Block rdd_5_52 stored as values in memory (estimated size 47.0 MB, free 10.7 GB)
+18/02/08 19:40:47 INFO BlockManagerInfo: Added rdd_5_52 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 47.0 MB, free: 10.7 GB)
+18/02/08 19:40:47 INFO Executor: Finished task 52.0 in stage 1.0 (TID 53). 832 bytes result sent to driver
+18/02/08 19:40:47 INFO TaskSetManager: Starting task 53.0 in stage 1.0 (TID 54, localhost, executor driver, partition 53, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:47 INFO Executor: Running task 53.0 in stage 1.0 (TID 54)
+18/02/08 19:40:47 INFO TaskSetManager: Finished task 52.0 in stage 1.0 (TID 53) in 1080 ms on localhost (executor driver) (53/307)
+18/02/08 19:40:47 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1778384896+33554432
+18/02/08 19:40:48 INFO MemoryStore: Block rdd_5_53 stored as values in memory (estimated size 46.6 MB, free 10.7 GB)
+18/02/08 19:40:48 INFO BlockManagerInfo: Added rdd_5_53 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.6 MB, free: 10.7 GB)
+18/02/08 19:40:48 INFO Executor: Finished task 53.0 in stage 1.0 (TID 54). 875 bytes result sent to driver
+18/02/08 19:40:48 INFO TaskSetManager: Starting task 54.0 in stage 1.0 (TID 55, localhost, executor driver, partition 54, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:48 INFO Executor: Running task 54.0 in stage 1.0 (TID 55)
+18/02/08 19:40:48 INFO TaskSetManager: Finished task 53.0 in stage 1.0 (TID 54) in 1124 ms on localhost (executor driver) (54/307)
+18/02/08 19:40:48 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1811939328+33554432
+18/02/08 19:40:49 INFO MemoryStore: Block rdd_5_54 stored as values in memory (estimated size 45.7 MB, free 10.7 GB)
+18/02/08 19:40:49 INFO BlockManagerInfo: Added rdd_5_54 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 45.7 MB, free: 10.7 GB)
+18/02/08 19:40:49 INFO Executor: Finished task 54.0 in stage 1.0 (TID 55). 789 bytes result sent to driver
+18/02/08 19:40:49 INFO TaskSetManager: Starting task 55.0 in stage 1.0 (TID 56, localhost, executor driver, partition 55, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:49 INFO TaskSetManager: Finished task 54.0 in stage 1.0 (TID 55) in 1096 ms on localhost (executor driver) (55/307)
+18/02/08 19:40:49 INFO Executor: Running task 55.0 in stage 1.0 (TID 56)
+18/02/08 19:40:49 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1845493760+33554432
+18/02/08 19:40:53 INFO MemoryStore: Block rdd_5_55 stored as values in memory (estimated size 46.5 MB, free 10.6 GB)
+18/02/08 19:40:53 INFO BlockManagerInfo: Added rdd_5_55 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.5 MB, free: 10.6 GB)
+18/02/08 19:40:53 INFO Executor: Finished task 55.0 in stage 1.0 (TID 56). 875 bytes result sent to driver
+18/02/08 19:40:53 INFO TaskSetManager: Starting task 56.0 in stage 1.0 (TID 57, localhost, executor driver, partition 56, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:53 INFO Executor: Running task 56.0 in stage 1.0 (TID 57)
+18/02/08 19:40:53 INFO TaskSetManager: Finished task 55.0 in stage 1.0 (TID 56) in 3563 ms on localhost (executor driver) (56/307)
+18/02/08 19:40:53 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1879048192+33554432
+18/02/08 19:40:54 INFO MemoryStore: Block rdd_5_56 stored as values in memory (estimated size 46.9 MB, free 10.6 GB)
+18/02/08 19:40:54 INFO BlockManagerInfo: Added rdd_5_56 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.9 MB, free: 10.6 GB)
+18/02/08 19:40:54 INFO Executor: Finished task 56.0 in stage 1.0 (TID 57). 832 bytes result sent to driver
+18/02/08 19:40:54 INFO TaskSetManager: Starting task 57.0 in stage 1.0 (TID 58, localhost, executor driver, partition 57, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:54 INFO Executor: Running task 57.0 in stage 1.0 (TID 58)
+18/02/08 19:40:54 INFO TaskSetManager: Finished task 56.0 in stage 1.0 (TID 57) in 1103 ms on localhost (executor driver) (57/307)
+18/02/08 19:40:54 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1912602624+33554432
+18/02/08 19:40:55 INFO MemoryStore: Block rdd_5_57 stored as values in memory (estimated size 46.7 MB, free 10.5 GB)
+18/02/08 19:40:55 INFO BlockManagerInfo: Added rdd_5_57 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.7 MB, free: 10.5 GB)
+18/02/08 19:40:55 INFO Executor: Finished task 57.0 in stage 1.0 (TID 58). 832 bytes result sent to driver
+18/02/08 19:40:55 INFO TaskSetManager: Starting task 58.0 in stage 1.0 (TID 59, localhost, executor driver, partition 58, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:55 INFO Executor: Running task 58.0 in stage 1.0 (TID 59)
+18/02/08 19:40:55 INFO TaskSetManager: Finished task 57.0 in stage 1.0 (TID 58) in 1095 ms on localhost (executor driver) (58/307)
+18/02/08 19:40:55 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1946157056+33554432
+18/02/08 19:40:56 INFO MemoryStore: Block rdd_5_58 stored as values in memory (estimated size 46.9 MB, free 10.5 GB)
+18/02/08 19:40:56 INFO BlockManagerInfo: Added rdd_5_58 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.9 MB, free: 10.5 GB)
+18/02/08 19:40:56 INFO Executor: Finished task 58.0 in stage 1.0 (TID 59). 832 bytes result sent to driver
+18/02/08 19:40:56 INFO TaskSetManager: Starting task 59.0 in stage 1.0 (TID 60, localhost, executor driver, partition 59, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:56 INFO Executor: Running task 59.0 in stage 1.0 (TID 60)
+18/02/08 19:40:56 INFO TaskSetManager: Finished task 58.0 in stage 1.0 (TID 59) in 1089 ms on localhost (executor driver) (59/307)
+18/02/08 19:40:56 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:1979711488+33554432
+18/02/08 19:40:57 INFO MemoryStore: Block rdd_5_59 stored as values in memory (estimated size 46.7 MB, free 10.4 GB)
+18/02/08 19:40:57 INFO BlockManagerInfo: Added rdd_5_59 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.7 MB, free: 10.4 GB)
+18/02/08 19:40:57 INFO Executor: Finished task 59.0 in stage 1.0 (TID 60). 832 bytes result sent to driver
+18/02/08 19:40:57 INFO TaskSetManager: Starting task 60.0 in stage 1.0 (TID 61, localhost, executor driver, partition 60, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:57 INFO Executor: Running task 60.0 in stage 1.0 (TID 61)
+18/02/08 19:40:57 INFO TaskSetManager: Finished task 59.0 in stage 1.0 (TID 60) in 1293 ms on localhost (executor driver) (60/307)
+18/02/08 19:40:57 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2013265920+33554432
+18/02/08 19:40:58 INFO MemoryStore: Block rdd_5_60 stored as values in memory (estimated size 46.4 MB, free 10.4 GB)
+18/02/08 19:40:58 INFO BlockManagerInfo: Added rdd_5_60 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.4 MB, free: 10.4 GB)
+18/02/08 19:40:58 INFO Executor: Finished task 60.0 in stage 1.0 (TID 61). 832 bytes result sent to driver
+18/02/08 19:40:58 INFO TaskSetManager: Starting task 61.0 in stage 1.0 (TID 62, localhost, executor driver, partition 61, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:58 INFO Executor: Running task 61.0 in stage 1.0 (TID 62)
+18/02/08 19:40:58 INFO TaskSetManager: Finished task 60.0 in stage 1.0 (TID 61) in 1096 ms on localhost (executor driver) (61/307)
+18/02/08 19:40:58 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2046820352+33554432
+18/02/08 19:40:59 INFO MemoryStore: Block rdd_5_61 stored as values in memory (estimated size 45.7 MB, free 10.3 GB)
+18/02/08 19:40:59 INFO BlockManagerInfo: Added rdd_5_61 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 45.7 MB, free: 10.3 GB)
+18/02/08 19:40:59 INFO Executor: Finished task 61.0 in stage 1.0 (TID 62). 832 bytes result sent to driver
+18/02/08 19:40:59 INFO TaskSetManager: Starting task 62.0 in stage 1.0 (TID 63, localhost, executor driver, partition 62, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:40:59 INFO Executor: Running task 62.0 in stage 1.0 (TID 63)
+18/02/08 19:40:59 INFO TaskSetManager: Finished task 61.0 in stage 1.0 (TID 62) in 1089 ms on localhost (executor driver) (62/307)
+18/02/08 19:40:59 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2080374784+33554432
+18/02/08 19:41:00 INFO MemoryStore: Block rdd_5_62 stored as values in memory (estimated size 46.6 MB, free 10.3 GB)
+18/02/08 19:41:00 INFO BlockManagerInfo: Added rdd_5_62 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.6 MB, free: 10.3 GB)
+18/02/08 19:41:00 INFO Executor: Finished task 62.0 in stage 1.0 (TID 63). 832 bytes result sent to driver
+18/02/08 19:41:00 INFO TaskSetManager: Starting task 63.0 in stage 1.0 (TID 64, localhost, executor driver, partition 63, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:00 INFO Executor: Running task 63.0 in stage 1.0 (TID 64)
+18/02/08 19:41:00 INFO TaskSetManager: Finished task 62.0 in stage 1.0 (TID 63) in 1091 ms on localhost (executor driver) (63/307)
+18/02/08 19:41:00 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2113929216+33554432
+18/02/08 19:41:02 INFO MemoryStore: Block rdd_5_63 stored as values in memory (estimated size 46.6 MB, free 10.2 GB)
+18/02/08 19:41:02 INFO BlockManagerInfo: Added rdd_5_63 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.6 MB, free: 10.2 GB)
+18/02/08 19:41:02 INFO Executor: Finished task 63.0 in stage 1.0 (TID 64). 832 bytes result sent to driver
+18/02/08 19:41:02 INFO TaskSetManager: Starting task 64.0 in stage 1.0 (TID 65, localhost, executor driver, partition 64, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:02 INFO Executor: Running task 64.0 in stage 1.0 (TID 65)
+18/02/08 19:41:02 INFO TaskSetManager: Finished task 63.0 in stage 1.0 (TID 64) in 1281 ms on localhost (executor driver) (64/307)
+18/02/08 19:41:02 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2147483648+33554432
+18/02/08 19:41:03 INFO MemoryStore: Block rdd_5_64 stored as values in memory (estimated size 46.5 MB, free 10.2 GB)
+18/02/08 19:41:03 INFO BlockManagerInfo: Added rdd_5_64 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.5 MB, free: 10.2 GB)
+18/02/08 19:41:03 INFO Executor: Finished task 64.0 in stage 1.0 (TID 65). 832 bytes result sent to driver
+18/02/08 19:41:03 INFO TaskSetManager: Starting task 65.0 in stage 1.0 (TID 66, localhost, executor driver, partition 65, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:03 INFO Executor: Running task 65.0 in stage 1.0 (TID 66)
+18/02/08 19:41:03 INFO TaskSetManager: Finished task 64.0 in stage 1.0 (TID 65) in 1090 ms on localhost (executor driver) (65/307)
+18/02/08 19:41:03 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2181038080+33554432
+18/02/08 19:41:04 INFO MemoryStore: Block rdd_5_65 stored as values in memory (estimated size 46.4 MB, free 10.2 GB)
+18/02/08 19:41:04 INFO BlockManagerInfo: Added rdd_5_65 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.4 MB, free: 10.2 GB)
+18/02/08 19:41:04 INFO Executor: Finished task 65.0 in stage 1.0 (TID 66). 832 bytes result sent to driver
+18/02/08 19:41:04 INFO TaskSetManager: Starting task 66.0 in stage 1.0 (TID 67, localhost, executor driver, partition 66, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:04 INFO Executor: Running task 66.0 in stage 1.0 (TID 67)
+18/02/08 19:41:04 INFO TaskSetManager: Finished task 65.0 in stage 1.0 (TID 66) in 1075 ms on localhost (executor driver) (66/307)
+18/02/08 19:41:04 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2214592512+33554432
+18/02/08 19:41:05 INFO MemoryStore: Block rdd_5_66 stored as values in memory (estimated size 46.3 MB, free 10.1 GB)
+18/02/08 19:41:05 INFO BlockManagerInfo: Added rdd_5_66 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.3 MB, free: 10.1 GB)
+18/02/08 19:41:05 INFO Executor: Finished task 66.0 in stage 1.0 (TID 67). 832 bytes result sent to driver
+18/02/08 19:41:05 INFO TaskSetManager: Starting task 67.0 in stage 1.0 (TID 68, localhost, executor driver, partition 67, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:05 INFO TaskSetManager: Finished task 66.0 in stage 1.0 (TID 67) in 1079 ms on localhost (executor driver) (67/307)
+18/02/08 19:41:05 INFO Executor: Running task 67.0 in stage 1.0 (TID 68)
+18/02/08 19:41:05 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2248146944+33554432
+18/02/08 19:41:06 INFO MemoryStore: Block rdd_5_67 stored as values in memory (estimated size 46.6 MB, free 10.1 GB)
+18/02/08 19:41:06 INFO BlockManagerInfo: Added rdd_5_67 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.6 MB, free: 10.1 GB)
+18/02/08 19:41:06 INFO Executor: Finished task 67.0 in stage 1.0 (TID 68). 832 bytes result sent to driver
+18/02/08 19:41:06 INFO TaskSetManager: Starting task 68.0 in stage 1.0 (TID 69, localhost, executor driver, partition 68, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:06 INFO Executor: Running task 68.0 in stage 1.0 (TID 69)
+18/02/08 19:41:06 INFO TaskSetManager: Finished task 67.0 in stage 1.0 (TID 68) in 1076 ms on localhost (executor driver) (68/307)
+18/02/08 19:41:06 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2281701376+33554432
+18/02/08 19:41:07 INFO MemoryStore: Block rdd_5_68 stored as values in memory (estimated size 46.9 MB, free 10.0 GB)
+18/02/08 19:41:07 INFO BlockManagerInfo: Added rdd_5_68 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.9 MB, free: 10.0 GB)
+18/02/08 19:41:07 INFO Executor: Finished task 68.0 in stage 1.0 (TID 69). 832 bytes result sent to driver
+18/02/08 19:41:07 INFO TaskSetManager: Starting task 69.0 in stage 1.0 (TID 70, localhost, executor driver, partition 69, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:07 INFO Executor: Running task 69.0 in stage 1.0 (TID 70)
+18/02/08 19:41:07 INFO TaskSetManager: Finished task 68.0 in stage 1.0 (TID 69) in 1284 ms on localhost (executor driver) (69/307)
+18/02/08 19:41:07 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2315255808+33554432
+18/02/08 19:41:08 INFO MemoryStore: Block rdd_5_69 stored as values in memory (estimated size 45.8 MB, free 10.0 GB)
+18/02/08 19:41:08 INFO BlockManagerInfo: Added rdd_5_69 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 45.8 MB, free: 10.0 GB)
+18/02/08 19:41:08 INFO Executor: Finished task 69.0 in stage 1.0 (TID 70). 789 bytes result sent to driver
+18/02/08 19:41:08 INFO TaskSetManager: Starting task 70.0 in stage 1.0 (TID 71, localhost, executor driver, partition 70, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:08 INFO Executor: Running task 70.0 in stage 1.0 (TID 71)
+18/02/08 19:41:08 INFO TaskSetManager: Finished task 69.0 in stage 1.0 (TID 70) in 1081 ms on localhost (executor driver) (70/307)
+18/02/08 19:41:08 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2348810240+33554432
+18/02/08 19:41:09 INFO MemoryStore: Block rdd_5_70 stored as values in memory (estimated size 46.7 MB, free 9.9 GB)
+18/02/08 19:41:09 INFO BlockManagerInfo: Added rdd_5_70 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.7 MB, free: 9.9 GB)
+18/02/08 19:41:09 INFO Executor: Finished task 70.0 in stage 1.0 (TID 71). 832 bytes result sent to driver
+18/02/08 19:41:09 INFO TaskSetManager: Starting task 71.0 in stage 1.0 (TID 72, localhost, executor driver, partition 71, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:09 INFO TaskSetManager: Finished task 70.0 in stage 1.0 (TID 71) in 1089 ms on localhost (executor driver) (71/307)
+18/02/08 19:41:09 INFO Executor: Running task 71.0 in stage 1.0 (TID 72)
+18/02/08 19:41:09 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2382364672+33554432
+18/02/08 19:41:10 INFO MemoryStore: Block rdd_5_71 stored as values in memory (estimated size 46.1 MB, free 9.9 GB)
+18/02/08 19:41:10 INFO BlockManagerInfo: Added rdd_5_71 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.1 MB, free: 9.9 GB)
+18/02/08 19:41:11 INFO Executor: Finished task 71.0 in stage 1.0 (TID 72). 832 bytes result sent to driver
+18/02/08 19:41:11 INFO TaskSetManager: Starting task 72.0 in stage 1.0 (TID 73, localhost, executor driver, partition 72, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:11 INFO Executor: Running task 72.0 in stage 1.0 (TID 73)
+18/02/08 19:41:11 INFO TaskSetManager: Finished task 71.0 in stage 1.0 (TID 72) in 1078 ms on localhost (executor driver) (72/307)
+18/02/08 19:41:11 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2415919104+33554432
+18/02/08 19:41:12 INFO MemoryStore: Block rdd_5_72 stored as values in memory (estimated size 46.3 MB, free 9.8 GB)
+18/02/08 19:41:12 INFO BlockManagerInfo: Added rdd_5_72 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.3 MB, free: 9.8 GB)
+18/02/08 19:41:12 INFO Executor: Finished task 72.0 in stage 1.0 (TID 73). 875 bytes result sent to driver
+18/02/08 19:41:12 INFO TaskSetManager: Starting task 73.0 in stage 1.0 (TID 74, localhost, executor driver, partition 73, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:12 INFO Executor: Running task 73.0 in stage 1.0 (TID 74)
+18/02/08 19:41:12 INFO TaskSetManager: Finished task 72.0 in stage 1.0 (TID 73) in 1319 ms on localhost (executor driver) (73/307)
+18/02/08 19:41:12 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2449473536+33554432
+18/02/08 19:41:13 INFO MemoryStore: Block rdd_5_73 stored as values in memory (estimated size 47.1 MB, free 9.8 GB)
+18/02/08 19:41:13 INFO BlockManagerInfo: Added rdd_5_73 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 47.1 MB, free: 9.8 GB)
+18/02/08 19:41:13 INFO Executor: Finished task 73.0 in stage 1.0 (TID 74). 832 bytes result sent to driver
+18/02/08 19:41:13 INFO TaskSetManager: Starting task 74.0 in stage 1.0 (TID 75, localhost, executor driver, partition 74, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:13 INFO Executor: Running task 74.0 in stage 1.0 (TID 75)
+18/02/08 19:41:13 INFO TaskSetManager: Finished task 73.0 in stage 1.0 (TID 74) in 1082 ms on localhost (executor driver) (74/307)
+18/02/08 19:41:13 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2483027968+33554432
+18/02/08 19:41:14 INFO MemoryStore: Block rdd_5_74 stored as values in memory (estimated size 46.2 MB, free 9.8 GB)
+18/02/08 19:41:14 INFO BlockManagerInfo: Added rdd_5_74 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.2 MB, free: 9.8 GB)
+18/02/08 19:41:14 INFO Executor: Finished task 74.0 in stage 1.0 (TID 75). 875 bytes result sent to driver
+18/02/08 19:41:14 INFO TaskSetManager: Starting task 75.0 in stage 1.0 (TID 76, localhost, executor driver, partition 75, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:14 INFO TaskSetManager: Finished task 74.0 in stage 1.0 (TID 75) in 1077 ms on localhost (executor driver) (75/307)
+18/02/08 19:41:14 INFO Executor: Running task 75.0 in stage 1.0 (TID 76)
+18/02/08 19:41:14 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2516582400+33554432
+18/02/08 19:41:15 INFO MemoryStore: Block rdd_5_75 stored as values in memory (estimated size 46.1 MB, free 9.7 GB)
+18/02/08 19:41:15 INFO BlockManagerInfo: Added rdd_5_75 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.1 MB, free: 9.7 GB)
+18/02/08 19:41:15 INFO Executor: Finished task 75.0 in stage 1.0 (TID 76). 789 bytes result sent to driver
+18/02/08 19:41:15 INFO TaskSetManager: Starting task 76.0 in stage 1.0 (TID 77, localhost, executor driver, partition 76, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:15 INFO Executor: Running task 76.0 in stage 1.0 (TID 77)
+18/02/08 19:41:15 INFO TaskSetManager: Finished task 75.0 in stage 1.0 (TID 76) in 1124 ms on localhost (executor driver) (76/307)
+18/02/08 19:41:15 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2550136832+33554432
+18/02/08 19:41:16 INFO MemoryStore: Block rdd_5_76 stored as values in memory (estimated size 46.4 MB, free 9.7 GB)
+18/02/08 19:41:16 INFO BlockManagerInfo: Added rdd_5_76 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.4 MB, free: 9.7 GB)
+18/02/08 19:41:16 INFO Executor: Finished task 76.0 in stage 1.0 (TID 77). 832 bytes result sent to driver
+18/02/08 19:41:16 INFO TaskSetManager: Starting task 77.0 in stage 1.0 (TID 78, localhost, executor driver, partition 77, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:16 INFO Executor: Running task 77.0 in stage 1.0 (TID 78)
+18/02/08 19:41:16 INFO TaskSetManager: Finished task 76.0 in stage 1.0 (TID 77) in 1079 ms on localhost (executor driver) (77/307)
+18/02/08 19:41:16 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2583691264+33554432
+18/02/08 19:41:17 INFO MemoryStore: Block rdd_5_77 stored as values in memory (estimated size 46.4 MB, free 9.6 GB)
+18/02/08 19:41:17 INFO BlockManagerInfo: Added rdd_5_77 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.4 MB, free: 9.6 GB)
+18/02/08 19:41:17 INFO Executor: Finished task 77.0 in stage 1.0 (TID 78). 875 bytes result sent to driver
+18/02/08 19:41:17 INFO TaskSetManager: Starting task 78.0 in stage 1.0 (TID 79, localhost, executor driver, partition 78, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:17 INFO Executor: Running task 78.0 in stage 1.0 (TID 79)
+18/02/08 19:41:17 INFO TaskSetManager: Finished task 77.0 in stage 1.0 (TID 78) in 1234 ms on localhost (executor driver) (78/307)
+18/02/08 19:41:17 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2617245696+33554432
+18/02/08 19:41:18 INFO MemoryStore: Block rdd_5_78 stored as values in memory (estimated size 47.2 MB, free 9.6 GB)
+18/02/08 19:41:18 INFO BlockManagerInfo: Added rdd_5_78 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 47.2 MB, free: 9.6 GB)
+18/02/08 19:41:19 INFO Executor: Finished task 78.0 in stage 1.0 (TID 79). 789 bytes result sent to driver
+18/02/08 19:41:19 INFO TaskSetManager: Starting task 79.0 in stage 1.0 (TID 80, localhost, executor driver, partition 79, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:19 INFO TaskSetManager: Finished task 78.0 in stage 1.0 (TID 79) in 1085 ms on localhost (executor driver) (79/307)
+18/02/08 19:41:19 INFO Executor: Running task 79.0 in stage 1.0 (TID 80)
+18/02/08 19:41:19 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2650800128+33554432
+18/02/08 19:41:20 INFO MemoryStore: Block rdd_5_79 stored as values in memory (estimated size 46.6 MB, free 9.5 GB)
+18/02/08 19:41:20 INFO BlockManagerInfo: Added rdd_5_79 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.6 MB, free: 9.5 GB)
+18/02/08 19:41:20 INFO Executor: Finished task 79.0 in stage 1.0 (TID 80). 832 bytes result sent to driver
+18/02/08 19:41:20 INFO TaskSetManager: Starting task 80.0 in stage 1.0 (TID 81, localhost, executor driver, partition 80, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:20 INFO Executor: Running task 80.0 in stage 1.0 (TID 81)
+18/02/08 19:41:20 INFO TaskSetManager: Finished task 79.0 in stage 1.0 (TID 80) in 1081 ms on localhost (executor driver) (80/307)
+18/02/08 19:41:20 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2684354560+33554432
+18/02/08 19:41:21 INFO MemoryStore: Block rdd_5_80 stored as values in memory (estimated size 46.6 MB, free 9.5 GB)
+18/02/08 19:41:21 INFO BlockManagerInfo: Added rdd_5_80 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.6 MB, free: 9.5 GB)
+18/02/08 19:41:21 INFO Executor: Finished task 80.0 in stage 1.0 (TID 81). 832 bytes result sent to driver
+18/02/08 19:41:21 INFO TaskSetManager: Starting task 81.0 in stage 1.0 (TID 82, localhost, executor driver, partition 81, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:21 INFO Executor: Running task 81.0 in stage 1.0 (TID 82)
+18/02/08 19:41:21 INFO TaskSetManager: Finished task 80.0 in stage 1.0 (TID 81) in 1099 ms on localhost (executor driver) (81/307)
+18/02/08 19:41:21 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2717908992+33554432
+18/02/08 19:41:22 INFO MemoryStore: Block rdd_5_81 stored as values in memory (estimated size 46.5 MB, free 9.4 GB)
+18/02/08 19:41:22 INFO BlockManagerInfo: Added rdd_5_81 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.5 MB, free: 9.4 GB)
+18/02/08 19:41:22 INFO Executor: Finished task 81.0 in stage 1.0 (TID 82). 875 bytes result sent to driver
+18/02/08 19:41:22 INFO TaskSetManager: Starting task 82.0 in stage 1.0 (TID 83, localhost, executor driver, partition 82, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:22 INFO Executor: Running task 82.0 in stage 1.0 (TID 83)
+18/02/08 19:41:22 INFO TaskSetManager: Finished task 81.0 in stage 1.0 (TID 82) in 1249 ms on localhost (executor driver) (82/307)
+18/02/08 19:41:22 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2751463424+33554432
+18/02/08 19:41:23 INFO MemoryStore: Block rdd_5_82 stored as values in memory (estimated size 46.8 MB, free 9.4 GB)
+18/02/08 19:41:23 INFO BlockManagerInfo: Added rdd_5_82 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.8 MB, free: 9.4 GB)
+18/02/08 19:41:23 INFO Executor: Finished task 82.0 in stage 1.0 (TID 83). 789 bytes result sent to driver
+18/02/08 19:41:23 INFO TaskSetManager: Starting task 83.0 in stage 1.0 (TID 84, localhost, executor driver, partition 83, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:23 INFO Executor: Running task 83.0 in stage 1.0 (TID 84)
+18/02/08 19:41:23 INFO TaskSetManager: Finished task 82.0 in stage 1.0 (TID 83) in 1085 ms on localhost (executor driver) (83/307)
+18/02/08 19:41:23 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2785017856+33554432
+18/02/08 19:41:24 INFO MemoryStore: Block rdd_5_83 stored as values in memory (estimated size 46.3 MB, free 9.3 GB)
+18/02/08 19:41:24 INFO BlockManagerInfo: Added rdd_5_83 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.3 MB, free: 9.3 GB)
+18/02/08 19:41:24 INFO Executor: Finished task 83.0 in stage 1.0 (TID 84). 832 bytes result sent to driver
+18/02/08 19:41:24 INFO TaskSetManager: Starting task 84.0 in stage 1.0 (TID 85, localhost, executor driver, partition 84, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:24 INFO Executor: Running task 84.0 in stage 1.0 (TID 85)
+18/02/08 19:41:24 INFO TaskSetManager: Finished task 83.0 in stage 1.0 (TID 84) in 1092 ms on localhost (executor driver) (84/307)
+18/02/08 19:41:24 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2818572288+33554432
+18/02/08 19:41:25 INFO MemoryStore: Block rdd_5_84 stored as values in memory (estimated size 46.7 MB, free 9.3 GB)
+18/02/08 19:41:25 INFO BlockManagerInfo: Added rdd_5_84 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.7 MB, free: 9.3 GB)
+18/02/08 19:41:25 INFO Executor: Finished task 84.0 in stage 1.0 (TID 85). 832 bytes result sent to driver
+18/02/08 19:41:25 INFO TaskSetManager: Starting task 85.0 in stage 1.0 (TID 86, localhost, executor driver, partition 85, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:25 INFO Executor: Running task 85.0 in stage 1.0 (TID 86)
+18/02/08 19:41:25 INFO TaskSetManager: Finished task 84.0 in stage 1.0 (TID 85) in 1072 ms on localhost (executor driver) (85/307)
+18/02/08 19:41:25 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2852126720+33554432
+18/02/08 19:41:29 INFO MemoryStore: Block rdd_5_85 stored as values in memory (estimated size 46.5 MB, free 9.3 GB)
+18/02/08 19:41:29 INFO BlockManagerInfo: Added rdd_5_85 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.5 MB, free: 9.3 GB)
+18/02/08 19:41:29 INFO Executor: Finished task 85.0 in stage 1.0 (TID 86). 832 bytes result sent to driver
+18/02/08 19:41:29 INFO TaskSetManager: Starting task 86.0 in stage 1.0 (TID 87, localhost, executor driver, partition 86, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:29 INFO Executor: Running task 86.0 in stage 1.0 (TID 87)
+18/02/08 19:41:29 INFO TaskSetManager: Finished task 85.0 in stage 1.0 (TID 86) in 3715 ms on localhost (executor driver) (86/307)
+18/02/08 19:41:29 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2885681152+33554432
+18/02/08 19:41:30 INFO MemoryStore: Block rdd_5_86 stored as values in memory (estimated size 46.5 MB, free 9.2 GB)
+18/02/08 19:41:30 INFO BlockManagerInfo: Added rdd_5_86 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.5 MB, free: 9.2 GB)
+18/02/08 19:41:30 INFO Executor: Finished task 86.0 in stage 1.0 (TID 87). 832 bytes result sent to driver
+18/02/08 19:41:30 INFO TaskSetManager: Starting task 87.0 in stage 1.0 (TID 88, localhost, executor driver, partition 87, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:30 INFO Executor: Running task 87.0 in stage 1.0 (TID 88)
+18/02/08 19:41:30 INFO TaskSetManager: Finished task 86.0 in stage 1.0 (TID 87) in 1103 ms on localhost (executor driver) (87/307)
+18/02/08 19:41:30 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2919235584+33554432
+18/02/08 19:41:31 INFO MemoryStore: Block rdd_5_87 stored as values in memory (estimated size 46.6 MB, free 9.2 GB)
+18/02/08 19:41:31 INFO BlockManagerInfo: Added rdd_5_87 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.6 MB, free: 9.2 GB)
+18/02/08 19:41:31 INFO Executor: Finished task 87.0 in stage 1.0 (TID 88). 832 bytes result sent to driver
+18/02/08 19:41:31 INFO TaskSetManager: Starting task 88.0 in stage 1.0 (TID 89, localhost, executor driver, partition 88, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:31 INFO Executor: Running task 88.0 in stage 1.0 (TID 89)
+18/02/08 19:41:31 INFO TaskSetManager: Finished task 87.0 in stage 1.0 (TID 88) in 1110 ms on localhost (executor driver) (88/307)
+18/02/08 19:41:31 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2952790016+33554432
+18/02/08 19:41:32 INFO MemoryStore: Block rdd_5_88 stored as values in memory (estimated size 46.4 MB, free 9.1 GB)
+18/02/08 19:41:32 INFO BlockManagerInfo: Added rdd_5_88 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.4 MB, free: 9.1 GB)
+18/02/08 19:41:32 INFO Executor: Finished task 88.0 in stage 1.0 (TID 89). 789 bytes result sent to driver
+18/02/08 19:41:32 INFO TaskSetManager: Starting task 89.0 in stage 1.0 (TID 90, localhost, executor driver, partition 89, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:32 INFO Executor: Running task 89.0 in stage 1.0 (TID 90)
+18/02/08 19:41:32 INFO TaskSetManager: Finished task 88.0 in stage 1.0 (TID 89) in 1077 ms on localhost (executor driver) (89/307)
+18/02/08 19:41:32 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:2986344448+33554432
+18/02/08 19:41:34 INFO MemoryStore: Block rdd_5_89 stored as values in memory (estimated size 46.7 MB, free 9.1 GB)
+18/02/08 19:41:34 INFO BlockManagerInfo: Added rdd_5_89 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.7 MB, free: 9.1 GB)
+18/02/08 19:41:34 INFO Executor: Finished task 89.0 in stage 1.0 (TID 90). 875 bytes result sent to driver
+18/02/08 19:41:34 INFO TaskSetManager: Starting task 90.0 in stage 1.0 (TID 91, localhost, executor driver, partition 90, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:34 INFO Executor: Running task 90.0 in stage 1.0 (TID 91)
+18/02/08 19:41:34 INFO TaskSetManager: Finished task 89.0 in stage 1.0 (TID 90) in 1367 ms on localhost (executor driver) (90/307)
+18/02/08 19:41:34 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3019898880+33554432
+18/02/08 19:41:35 INFO MemoryStore: Block rdd_5_90 stored as values in memory (estimated size 46.8 MB, free 9.0 GB)
+18/02/08 19:41:35 INFO BlockManagerInfo: Added rdd_5_90 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.8 MB, free: 9.0 GB)
+18/02/08 19:41:35 INFO Executor: Finished task 90.0 in stage 1.0 (TID 91). 832 bytes result sent to driver
+18/02/08 19:41:35 INFO TaskSetManager: Starting task 91.0 in stage 1.0 (TID 92, localhost, executor driver, partition 91, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:35 INFO Executor: Running task 91.0 in stage 1.0 (TID 92)
+18/02/08 19:41:35 INFO TaskSetManager: Finished task 90.0 in stage 1.0 (TID 91) in 1080 ms on localhost (executor driver) (91/307)
+18/02/08 19:41:35 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3053453312+33554432
+18/02/08 19:41:36 INFO MemoryStore: Block rdd_5_91 stored as values in memory (estimated size 46.8 MB, free 9.0 GB)
+18/02/08 19:41:36 INFO BlockManagerInfo: Added rdd_5_91 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.8 MB, free: 9.0 GB)
+18/02/08 19:41:36 INFO Executor: Finished task 91.0 in stage 1.0 (TID 92). 789 bytes result sent to driver
+18/02/08 19:41:36 INFO TaskSetManager: Starting task 92.0 in stage 1.0 (TID 93, localhost, executor driver, partition 92, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:36 INFO Executor: Running task 92.0 in stage 1.0 (TID 93)
+18/02/08 19:41:36 INFO TaskSetManager: Finished task 91.0 in stage 1.0 (TID 92) in 1103 ms on localhost (executor driver) (92/307)
+18/02/08 19:41:36 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3087007744+33554432
+18/02/08 19:41:37 INFO MemoryStore: Block rdd_5_92 stored as values in memory (estimated size 46.3 MB, free 8.9 GB)
+18/02/08 19:41:37 INFO BlockManagerInfo: Added rdd_5_92 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.3 MB, free: 8.9 GB)
+18/02/08 19:41:37 INFO Executor: Finished task 92.0 in stage 1.0 (TID 93). 832 bytes result sent to driver
+18/02/08 19:41:37 INFO TaskSetManager: Starting task 93.0 in stage 1.0 (TID 94, localhost, executor driver, partition 93, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:37 INFO Executor: Running task 93.0 in stage 1.0 (TID 94)
+18/02/08 19:41:37 INFO TaskSetManager: Finished task 92.0 in stage 1.0 (TID 93) in 1100 ms on localhost (executor driver) (93/307)
+18/02/08 19:41:37 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3120562176+33554432
+18/02/08 19:41:38 INFO MemoryStore: Block rdd_5_93 stored as values in memory (estimated size 46.9 MB, free 8.9 GB)
+18/02/08 19:41:38 INFO BlockManagerInfo: Added rdd_5_93 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.9 MB, free: 8.9 GB)
+18/02/08 19:41:38 INFO Executor: Finished task 93.0 in stage 1.0 (TID 94). 832 bytes result sent to driver
+18/02/08 19:41:38 INFO TaskSetManager: Starting task 94.0 in stage 1.0 (TID 95, localhost, executor driver, partition 94, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:38 INFO Executor: Running task 94.0 in stage 1.0 (TID 95)
+18/02/08 19:41:38 INFO TaskSetManager: Finished task 93.0 in stage 1.0 (TID 94) in 1249 ms on localhost (executor driver) (94/307)
+18/02/08 19:41:38 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3154116608+33554432
+18/02/08 19:41:39 INFO MemoryStore: Block rdd_5_94 stored as values in memory (estimated size 46.5 MB, free 8.8 GB)
+18/02/08 19:41:39 INFO BlockManagerInfo: Added rdd_5_94 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.5 MB, free: 8.8 GB)
+18/02/08 19:41:39 INFO Executor: Finished task 94.0 in stage 1.0 (TID 95). 832 bytes result sent to driver
+18/02/08 19:41:39 INFO TaskSetManager: Starting task 95.0 in stage 1.0 (TID 96, localhost, executor driver, partition 95, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:39 INFO Executor: Running task 95.0 in stage 1.0 (TID 96)
+18/02/08 19:41:39 INFO TaskSetManager: Finished task 94.0 in stage 1.0 (TID 95) in 1135 ms on localhost (executor driver) (95/307)
+18/02/08 19:41:39 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3187671040+33554432
+18/02/08 19:41:40 INFO MemoryStore: Block rdd_5_95 stored as values in memory (estimated size 46.5 MB, free 8.8 GB)
+18/02/08 19:41:40 INFO BlockManagerInfo: Added rdd_5_95 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.5 MB, free: 8.8 GB)
+18/02/08 19:41:40 INFO Executor: Finished task 95.0 in stage 1.0 (TID 96). 789 bytes result sent to driver
+18/02/08 19:41:40 INFO TaskSetManager: Starting task 96.0 in stage 1.0 (TID 97, localhost, executor driver, partition 96, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:40 INFO TaskSetManager: Finished task 95.0 in stage 1.0 (TID 96) in 1107 ms on localhost (executor driver) (96/307)
+18/02/08 19:41:40 INFO Executor: Running task 96.0 in stage 1.0 (TID 97)
+18/02/08 19:41:40 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3221225472+33554432
+18/02/08 19:41:41 INFO MemoryStore: Block rdd_5_96 stored as values in memory (estimated size 46.4 MB, free 8.8 GB)
+18/02/08 19:41:41 INFO BlockManagerInfo: Added rdd_5_96 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.4 MB, free: 8.8 GB)
+18/02/08 19:41:41 INFO Executor: Finished task 96.0 in stage 1.0 (TID 97). 832 bytes result sent to driver
+18/02/08 19:41:41 INFO TaskSetManager: Starting task 97.0 in stage 1.0 (TID 98, localhost, executor driver, partition 97, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:41 INFO Executor: Running task 97.0 in stage 1.0 (TID 98)
+18/02/08 19:41:41 INFO TaskSetManager: Finished task 96.0 in stage 1.0 (TID 97) in 1080 ms on localhost (executor driver) (97/307)
+18/02/08 19:41:41 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3254779904+33554432
+18/02/08 19:41:43 INFO MemoryStore: Block rdd_5_97 stored as values in memory (estimated size 46.8 MB, free 8.7 GB)
+18/02/08 19:41:43 INFO BlockManagerInfo: Added rdd_5_97 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.8 MB, free: 8.7 GB)
+18/02/08 19:41:43 INFO Executor: Finished task 97.0 in stage 1.0 (TID 98). 875 bytes result sent to driver
+18/02/08 19:41:43 INFO TaskSetManager: Starting task 98.0 in stage 1.0 (TID 99, localhost, executor driver, partition 98, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:43 INFO Executor: Running task 98.0 in stage 1.0 (TID 99)
+18/02/08 19:41:43 INFO TaskSetManager: Finished task 97.0 in stage 1.0 (TID 98) in 1282 ms on localhost (executor driver) (98/307)
+18/02/08 19:41:43 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3288334336+33554432
+18/02/08 19:41:44 INFO MemoryStore: Block rdd_5_98 stored as values in memory (estimated size 46.9 MB, free 8.7 GB)
+18/02/08 19:41:44 INFO BlockManagerInfo: Added rdd_5_98 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.9 MB, free: 8.7 GB)
+18/02/08 19:41:44 INFO Executor: Finished task 98.0 in stage 1.0 (TID 99). 832 bytes result sent to driver
+18/02/08 19:41:44 INFO TaskSetManager: Starting task 99.0 in stage 1.0 (TID 100, localhost, executor driver, partition 99, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:44 INFO TaskSetManager: Finished task 98.0 in stage 1.0 (TID 99) in 1109 ms on localhost (executor driver) (99/307)
+18/02/08 19:41:44 INFO Executor: Running task 99.0 in stage 1.0 (TID 100)
+18/02/08 19:41:44 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3321888768+33554432
+18/02/08 19:41:45 INFO MemoryStore: Block rdd_5_99 stored as values in memory (estimated size 46.8 MB, free 8.6 GB)
+18/02/08 19:41:45 INFO BlockManagerInfo: Added rdd_5_99 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.8 MB, free: 8.6 GB)
+18/02/08 19:41:45 INFO Executor: Finished task 99.0 in stage 1.0 (TID 100). 832 bytes result sent to driver
+18/02/08 19:41:45 INFO TaskSetManager: Starting task 100.0 in stage 1.0 (TID 101, localhost, executor driver, partition 100, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:45 INFO TaskSetManager: Finished task 99.0 in stage 1.0 (TID 100) in 1083 ms on localhost (executor driver) (100/307)
+18/02/08 19:41:45 INFO Executor: Running task 100.0 in stage 1.0 (TID 101)
+18/02/08 19:41:45 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3355443200+33554432
+18/02/08 19:41:46 INFO MemoryStore: Block rdd_5_100 stored as values in memory (estimated size 46.0 MB, free 8.6 GB)
+18/02/08 19:41:46 INFO BlockManagerInfo: Added rdd_5_100 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.0 MB, free: 8.6 GB)
+18/02/08 19:41:46 INFO Executor: Finished task 100.0 in stage 1.0 (TID 101). 832 bytes result sent to driver
+18/02/08 19:41:46 INFO TaskSetManager: Starting task 101.0 in stage 1.0 (TID 102, localhost, executor driver, partition 101, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:46 INFO TaskSetManager: Finished task 100.0 in stage 1.0 (TID 101) in 1086 ms on localhost (executor driver) (101/307)
+18/02/08 19:41:46 INFO Executor: Running task 101.0 in stage 1.0 (TID 102)
+18/02/08 19:41:46 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3388997632+33554432
+18/02/08 19:41:47 INFO MemoryStore: Block rdd_5_101 stored as values in memory (estimated size 46.4 MB, free 8.5 GB)
+18/02/08 19:41:47 INFO BlockManagerInfo: Added rdd_5_101 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.4 MB, free: 8.5 GB)
+18/02/08 19:41:47 INFO Executor: Finished task 101.0 in stage 1.0 (TID 102). 875 bytes result sent to driver
+18/02/08 19:41:47 INFO TaskSetManager: Starting task 102.0 in stage 1.0 (TID 103, localhost, executor driver, partition 102, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:47 INFO Executor: Running task 102.0 in stage 1.0 (TID 103)
+18/02/08 19:41:47 INFO TaskSetManager: Finished task 101.0 in stage 1.0 (TID 102) in 1322 ms on localhost (executor driver) (102/307)
+18/02/08 19:41:47 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3422552064+33554432
+18/02/08 19:41:48 INFO MemoryStore: Block rdd_5_102 stored as values in memory (estimated size 46.0 MB, free 8.5 GB)
+18/02/08 19:41:48 INFO BlockManagerInfo: Added rdd_5_102 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.0 MB, free: 8.5 GB)
+18/02/08 19:41:48 INFO Executor: Finished task 102.0 in stage 1.0 (TID 103). 875 bytes result sent to driver
+18/02/08 19:41:48 INFO TaskSetManager: Starting task 103.0 in stage 1.0 (TID 104, localhost, executor driver, partition 103, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:48 INFO Executor: Running task 103.0 in stage 1.0 (TID 104)
+18/02/08 19:41:48 INFO TaskSetManager: Finished task 102.0 in stage 1.0 (TID 103) in 1075 ms on localhost (executor driver) (103/307)
+18/02/08 19:41:48 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3456106496+33554432
+18/02/08 19:41:49 INFO MemoryStore: Block rdd_5_103 stored as values in memory (estimated size 46.6 MB, free 8.4 GB)
+18/02/08 19:41:49 INFO BlockManagerInfo: Added rdd_5_103 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.6 MB, free: 8.4 GB)
+18/02/08 19:41:49 INFO Executor: Finished task 103.0 in stage 1.0 (TID 104). 832 bytes result sent to driver
+18/02/08 19:41:49 INFO TaskSetManager: Starting task 104.0 in stage 1.0 (TID 105, localhost, executor driver, partition 104, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:49 INFO Executor: Running task 104.0 in stage 1.0 (TID 105)
+18/02/08 19:41:49 INFO TaskSetManager: Finished task 103.0 in stage 1.0 (TID 104) in 1084 ms on localhost (executor driver) (104/307)
+18/02/08 19:41:49 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3489660928+33554432
+18/02/08 19:41:51 INFO MemoryStore: Block rdd_5_104 stored as values in memory (estimated size 46.6 MB, free 8.4 GB)
+18/02/08 19:41:51 INFO BlockManagerInfo: Added rdd_5_104 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.6 MB, free: 8.4 GB)
+18/02/08 19:41:51 INFO Executor: Finished task 104.0 in stage 1.0 (TID 105). 832 bytes result sent to driver
+18/02/08 19:41:51 INFO TaskSetManager: Starting task 105.0 in stage 1.0 (TID 106, localhost, executor driver, partition 105, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:51 INFO Executor: Running task 105.0 in stage 1.0 (TID 106)
+18/02/08 19:41:51 INFO TaskSetManager: Finished task 104.0 in stage 1.0 (TID 105) in 1368 ms on localhost (executor driver) (105/307)
+18/02/08 19:41:51 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3523215360+33554432
+18/02/08 19:41:52 INFO MemoryStore: Block rdd_5_105 stored as values in memory (estimated size 46.3 MB, free 8.3 GB)
+18/02/08 19:41:52 INFO BlockManagerInfo: Added rdd_5_105 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.3 MB, free: 8.3 GB)
+18/02/08 19:41:52 INFO Executor: Finished task 105.0 in stage 1.0 (TID 106). 875 bytes result sent to driver
+18/02/08 19:41:52 INFO TaskSetManager: Starting task 106.0 in stage 1.0 (TID 107, localhost, executor driver, partition 106, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:52 INFO Executor: Running task 106.0 in stage 1.0 (TID 107)
+18/02/08 19:41:52 INFO TaskSetManager: Finished task 105.0 in stage 1.0 (TID 106) in 1080 ms on localhost (executor driver) (106/307)
+18/02/08 19:41:52 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3556769792+33554432
+18/02/08 19:41:53 INFO MemoryStore: Block rdd_5_106 stored as values in memory (estimated size 46.3 MB, free 8.3 GB)
+18/02/08 19:41:53 INFO BlockManagerInfo: Added rdd_5_106 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.3 MB, free: 8.3 GB)
+18/02/08 19:41:53 INFO Executor: Finished task 106.0 in stage 1.0 (TID 107). 789 bytes result sent to driver
+18/02/08 19:41:53 INFO TaskSetManager: Starting task 107.0 in stage 1.0 (TID 108, localhost, executor driver, partition 107, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:53 INFO Executor: Running task 107.0 in stage 1.0 (TID 108)
+18/02/08 19:41:53 INFO TaskSetManager: Finished task 106.0 in stage 1.0 (TID 107) in 1089 ms on localhost (executor driver) (107/307)
+18/02/08 19:41:53 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3590324224+33554432
+18/02/08 19:41:54 INFO MemoryStore: Block rdd_5_107 stored as values in memory (estimated size 45.7 MB, free 8.3 GB)
+18/02/08 19:41:54 INFO BlockManagerInfo: Added rdd_5_107 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 45.7 MB, free: 8.3 GB)
+18/02/08 19:41:54 INFO Executor: Finished task 107.0 in stage 1.0 (TID 108). 832 bytes result sent to driver
+18/02/08 19:41:54 INFO TaskSetManager: Starting task 108.0 in stage 1.0 (TID 109, localhost, executor driver, partition 108, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:54 INFO Executor: Running task 108.0 in stage 1.0 (TID 109)
+18/02/08 19:41:54 INFO TaskSetManager: Finished task 107.0 in stage 1.0 (TID 108) in 1090 ms on localhost (executor driver) (108/307)
+18/02/08 19:41:54 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3623878656+33554432
+18/02/08 19:41:55 INFO MemoryStore: Block rdd_5_108 stored as values in memory (estimated size 46.2 MB, free 8.2 GB)
+18/02/08 19:41:55 INFO BlockManagerInfo: Added rdd_5_108 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.2 MB, free: 8.2 GB)
+18/02/08 19:41:55 INFO Executor: Finished task 108.0 in stage 1.0 (TID 109). 832 bytes result sent to driver
+18/02/08 19:41:55 INFO TaskSetManager: Starting task 109.0 in stage 1.0 (TID 110, localhost, executor driver, partition 109, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:55 INFO Executor: Running task 109.0 in stage 1.0 (TID 110)
+18/02/08 19:41:55 INFO TaskSetManager: Finished task 108.0 in stage 1.0 (TID 109) in 1386 ms on localhost (executor driver) (109/307)
+18/02/08 19:41:55 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3657433088+33554432
+18/02/08 19:41:57 INFO MemoryStore: Block rdd_5_109 stored as values in memory (estimated size 46.3 MB, free 8.2 GB)
+18/02/08 19:41:57 INFO BlockManagerInfo: Added rdd_5_109 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.3 MB, free: 8.2 GB)
+18/02/08 19:41:57 INFO Executor: Finished task 109.0 in stage 1.0 (TID 110). 789 bytes result sent to driver
+18/02/08 19:41:57 INFO TaskSetManager: Starting task 110.0 in stage 1.0 (TID 111, localhost, executor driver, partition 110, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:57 INFO Executor: Running task 110.0 in stage 1.0 (TID 111)
+18/02/08 19:41:57 INFO TaskSetManager: Finished task 109.0 in stage 1.0 (TID 110) in 1081 ms on localhost (executor driver) (110/307)
+18/02/08 19:41:57 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3690987520+33554432
+18/02/08 19:41:58 INFO MemoryStore: Block rdd_5_110 stored as values in memory (estimated size 46.3 MB, free 8.1 GB)
+18/02/08 19:41:58 INFO BlockManagerInfo: Added rdd_5_110 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.3 MB, free: 8.1 GB)
+18/02/08 19:41:58 INFO Executor: Finished task 110.0 in stage 1.0 (TID 111). 832 bytes result sent to driver
+18/02/08 19:41:58 INFO TaskSetManager: Starting task 111.0 in stage 1.0 (TID 112, localhost, executor driver, partition 111, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:58 INFO TaskSetManager: Finished task 110.0 in stage 1.0 (TID 111) in 1091 ms on localhost (executor driver) (111/307)
+18/02/08 19:41:58 INFO Executor: Running task 111.0 in stage 1.0 (TID 112)
+18/02/08 19:41:58 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3724541952+33554432
+18/02/08 19:41:59 INFO MemoryStore: Block rdd_5_111 stored as values in memory (estimated size 46.5 MB, free 8.1 GB)
+18/02/08 19:41:59 INFO BlockManagerInfo: Added rdd_5_111 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.5 MB, free: 8.1 GB)
+18/02/08 19:41:59 INFO Executor: Finished task 111.0 in stage 1.0 (TID 112). 832 bytes result sent to driver
+18/02/08 19:41:59 INFO TaskSetManager: Starting task 112.0 in stage 1.0 (TID 113, localhost, executor driver, partition 112, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:41:59 INFO TaskSetManager: Finished task 111.0 in stage 1.0 (TID 112) in 1337 ms on localhost (executor driver) (112/307)
+18/02/08 19:41:59 INFO Executor: Running task 112.0 in stage 1.0 (TID 113)
+18/02/08 19:41:59 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3758096384+33554432
+18/02/08 19:42:00 INFO MemoryStore: Block rdd_5_112 stored as values in memory (estimated size 46.8 MB, free 8.0 GB)
+18/02/08 19:42:00 INFO BlockManagerInfo: Added rdd_5_112 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.8 MB, free: 8.0 GB)
+18/02/08 19:42:00 INFO Executor: Finished task 112.0 in stage 1.0 (TID 113). 789 bytes result sent to driver
+18/02/08 19:42:00 INFO TaskSetManager: Starting task 113.0 in stage 1.0 (TID 114, localhost, executor driver, partition 113, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:42:00 INFO Executor: Running task 113.0 in stage 1.0 (TID 114)
+18/02/08 19:42:00 INFO TaskSetManager: Finished task 112.0 in stage 1.0 (TID 113) in 1082 ms on localhost (executor driver) (113/307)
+18/02/08 19:42:00 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3791650816+33554432
+18/02/08 19:42:01 INFO MemoryStore: Block rdd_5_113 stored as values in memory (estimated size 46.7 MB, free 8.0 GB)
+18/02/08 19:42:01 INFO BlockManagerInfo: Added rdd_5_113 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.7 MB, free: 8.0 GB)
+18/02/08 19:42:01 INFO Executor: Finished task 113.0 in stage 1.0 (TID 114). 789 bytes result sent to driver
+18/02/08 19:42:01 INFO TaskSetManager: Starting task 114.0 in stage 1.0 (TID 115, localhost, executor driver, partition 114, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:42:01 INFO Executor: Running task 114.0 in stage 1.0 (TID 115)
+18/02/08 19:42:01 INFO TaskSetManager: Finished task 113.0 in stage 1.0 (TID 114) in 1083 ms on localhost (executor driver) (114/307)
+18/02/08 19:42:01 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3825205248+33554432
+18/02/08 19:42:02 INFO MemoryStore: Block rdd_5_114 stored as values in memory (estimated size 46.2 MB, free 7.9 GB)
+18/02/08 19:42:02 INFO BlockManagerInfo: Added rdd_5_114 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.2 MB, free: 7.9 GB)
+18/02/08 19:42:02 INFO Executor: Finished task 114.0 in stage 1.0 (TID 115). 832 bytes result sent to driver
+18/02/08 19:42:02 INFO TaskSetManager: Starting task 115.0 in stage 1.0 (TID 116, localhost, executor driver, partition 115, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:42:02 INFO Executor: Running task 115.0 in stage 1.0 (TID 116)
+18/02/08 19:42:02 INFO TaskSetManager: Finished task 114.0 in stage 1.0 (TID 115) in 1355 ms on localhost (executor driver) (115/307)
+18/02/08 19:42:02 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3858759680+33554432
+18/02/08 19:42:04 INFO MemoryStore: Block rdd_5_115 stored as values in memory (estimated size 45.7 MB, free 7.9 GB)
+18/02/08 19:42:04 INFO BlockManagerInfo: Added rdd_5_115 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 45.7 MB, free: 7.9 GB)
+18/02/08 19:42:04 INFO Executor: Finished task 115.0 in stage 1.0 (TID 116). 832 bytes result sent to driver
+18/02/08 19:42:04 INFO TaskSetManager: Starting task 116.0 in stage 1.0 (TID 117, localhost, executor driver, partition 116, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:42:04 INFO TaskSetManager: Finished task 115.0 in stage 1.0 (TID 116) in 1093 ms on localhost (executor driver) (116/307)
+18/02/08 19:42:04 INFO Executor: Running task 116.0 in stage 1.0 (TID 117)
+18/02/08 19:42:04 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3892314112+33554432
+18/02/08 19:42:05 INFO MemoryStore: Block rdd_5_116 stored as values in memory (estimated size 46.5 MB, free 7.8 GB)
+18/02/08 19:42:05 INFO BlockManagerInfo: Added rdd_5_116 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.5 MB, free: 7.8 GB)
+18/02/08 19:42:05 INFO Executor: Finished task 116.0 in stage 1.0 (TID 117). 789 bytes result sent to driver
+18/02/08 19:42:05 INFO TaskSetManager: Starting task 117.0 in stage 1.0 (TID 118, localhost, executor driver, partition 117, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:42:05 INFO Executor: Running task 117.0 in stage 1.0 (TID 118)
+18/02/08 19:42:05 INFO TaskSetManager: Finished task 116.0 in stage 1.0 (TID 117) in 1102 ms on localhost (executor driver) (117/307)
+18/02/08 19:42:05 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3925868544+33554432
+18/02/08 19:42:11 INFO MemoryStore: Block rdd_5_117 stored as values in memory (estimated size 46.4 MB, free 7.8 GB)
+18/02/08 19:42:11 INFO BlockManagerInfo: Added rdd_5_117 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.4 MB, free: 7.8 GB)
+18/02/08 19:42:11 INFO Executor: Finished task 117.0 in stage 1.0 (TID 118). 875 bytes result sent to driver
+18/02/08 19:42:11 INFO TaskSetManager: Starting task 118.0 in stage 1.0 (TID 119, localhost, executor driver, partition 118, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:42:11 INFO Executor: Running task 118.0 in stage 1.0 (TID 119)
+18/02/08 19:42:11 INFO TaskSetManager: Finished task 117.0 in stage 1.0 (TID 118) in 5885 ms on localhost (executor driver) (118/307)
+18/02/08 19:42:11 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3959422976+33554432
+18/02/08 19:42:12 INFO MemoryStore: Block rdd_5_118 stored as values in memory (estimated size 46.3 MB, free 7.8 GB)
+18/02/08 19:42:12 INFO BlockManagerInfo: Added rdd_5_118 in memory on ip-172-31-3-143.us-west-2.compute.internal:40380 (size: 46.3 MB, free: 7.8 GB)
+18/02/08 19:42:12 INFO Executor: Finished task 118.0 in stage 1.0 (TID 119). 832 bytes result sent to driver
+18/02/08 19:42:12 INFO TaskSetManager: Starting task 119.0 in stage 1.0 (TID 120, localhost, executor driver, partition 119, PROCESS_LOCAL, 7872 bytes)
+18/02/08 19:42:12 INFO Executor: Running task 119.0 in stage 1.0 (TID 120)
+18/02/08 19:42:12 INFO TaskSetManager: Finished task 118.0 in stage 1.0 (TID 119) in 1081 ms on localhost (executor driver) (119/307)
+18/02/08 19:42:12 INFO HadoopRDD: Input split: file:/ebs2/preprocess/xaa:3992977408+33554432
