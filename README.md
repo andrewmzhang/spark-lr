@@ -23,3 +23,6 @@ To preprocess the data, run
 ```
 python2 preprocess.py train.txt     # train.txt is from kaggle display advertising challenge
 split -l 40000000 out.svm           # splits the data into xaa and xab, the training and test set, respectively 
+```
+
+Get the data from here: https://s3-eu-west-1.amazonaws.com/criteo-labs/dac.tar.gz
