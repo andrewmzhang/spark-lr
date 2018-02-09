@@ -16,3 +16,10 @@ spark.driver.memory 25g
 spark.driver.maxResultSize 0
 spark.executor.memory 25g
 ```
+
+
+To preprocess the data, run
+
+```
+python2 preprocess.py train.txt     # train.txt is from kaggle display advertising challenge
+split -l 40000000 out.svm           # splits the data into xaa and xab, the training and test set, respectively 

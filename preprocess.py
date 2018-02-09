@@ -1,3 +1,8 @@
+# Run using python 2
+# takes in 1 command line argument to the train.txt file
+# outputs to out.svm. 
+
+
 import sys
 from tqdm import tqdm
 
